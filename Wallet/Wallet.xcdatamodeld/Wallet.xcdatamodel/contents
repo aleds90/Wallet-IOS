@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="CartaCredito" representedClassName=".CartaCredito" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="importo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contoCorrente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContoCorrente" inverseName="listaCartaCredito" inverseEntity="ContoCorrente" syncable="YES"/>
+        <relationship name="listaMovimentoCartaCredito" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MovimentoCartaCredito" inverseName="cartaCredito" inverseEntity="MovimentoCartaCredito" syncable="YES"/>
+    </entity>
+    <entity name="Causale" representedClassName=".Causale" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listaMovimentoCartaCredito" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MovimentoCartaCredito" inverseName="causale" inverseEntity="MovimentoCartaCredito" syncable="YES"/>
+        <relationship name="listaMovimentoContoCorrente" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MovimentoContoCorrente" inverseName="causale" inverseEntity="MovimentoContoCorrente" syncable="YES"/>
+    </entity>
+    <entity name="ContoCorrente" representedClassName=".ContoCorrente" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="importo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listaCartaCredito" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CartaCredito" inverseName="contoCorrente" inverseEntity="CartaCredito" syncable="YES"/>
+        <relationship name="listaMovimentoContoCorrente" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MovimentoContoCorrente" inverseName="contoCorrente" inverseEntity="MovimentoContoCorrente" syncable="YES"/>
+        <relationship name="tipoConto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TipoConto" inverseName="listaContoCorrente" inverseEntity="TipoConto" syncable="YES"/>
+    </entity>
+    <entity name="MovimentoCartaCredito" representedClassName=".MovimentoCartaCredito" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="importo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cartaCredito" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CartaCredito" inverseName="listaMovimentoCartaCredito" inverseEntity="CartaCredito" syncable="YES"/>
+        <relationship name="causale" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Causale" inverseName="listaMovimentoCartaCredito" inverseEntity="Causale" syncable="YES"/>
+    </entity>
+    <entity name="MovimentoContoCorrente" representedClassName=".MovimentoContoCorrente" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="importo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rendicontato" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="causale" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Causale" inverseName="listaMovimentoContoCorrente" inverseEntity="Causale" syncable="YES"/>
+        <relationship name="contoCorrente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContoCorrente" inverseName="listaMovimentoContoCorrente" inverseEntity="ContoCorrente" syncable="YES"/>
+    </entity>
+    <entity name="TipoConto" representedClassName=".TipoConto" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listaContoCorrente" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContoCorrente" inverseName="tipoConto" inverseEntity="ContoCorrente" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Causale" positionX="-9" positionY="36" width="128" height="105"/>
+        <element name="CartaCredito" positionX="-9" positionY="54" width="128" height="120"/>
+        <element name="ContoCorrente" positionX="0" positionY="81" width="128" height="135"/>
+        <element name="TipoConto" positionX="18" positionY="90" width="128" height="90"/>
+        <element name="MovimentoContoCorrente" positionX="36" positionY="108" width="128" height="150"/>
+        <element name="MovimentoCartaCredito" positionX="54" positionY="144" width="128" height="135"/>
+    </elements>
+</model>
