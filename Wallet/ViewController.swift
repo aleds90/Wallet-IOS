@@ -6,15 +6,27 @@
 //  Copyright © 2016 AleMarco. All rights reserved.
 //
 
+import CoreData
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    //MARKS: Properties
+    
+    var listaContoCorrente = [ContoCorrente]()
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     //MARKS: Override UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Create navigation bar item for add new object to the tableview
+         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(ViewController.addNewItem))
+        // Set the title of the view
+        title = "I tuoi conti"
+        // Populate listaContoCorrente
+        getContoCorrenteFromCoreData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +46,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    //MARKS: Fuctions
     
+    func addNewItem(){
+        //TO-DO Deve creare l alert per inserire nuovi conti.
+    }
+    
+    func getContoCorrenteFromCoreData() {
+        let fetchRequest = NSFetchRequest(entityName: "ContoCorrente")
+        listaContoCorrente.removeAll()
+        do {
+            let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+            if let results = try managedObjectContext.executeFetchRequest(fetchRequest) as?[ContoCorrente]{
+                if(results.count>0){
+                    for item in results {
+                        listaContoCorrente.append(item)
+                    }
+                }else {
+                    print("list is empty")
+                }
+            }
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+    }
 
 }
 
