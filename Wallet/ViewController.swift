@@ -100,7 +100,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         pickerView.delegate = self
         pickerView.dataSource = self
 
-        // Add textfield 1
+        // Add textfield nome
       
         textfield1.layer.borderColor = UIColor.purpleColor().CGColor
         textfield1.layer.borderWidth = 1.5
@@ -109,7 +109,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         textfield1.textAlignment = NSTextAlignment.Center
         subview.addSubview(textfield1)
         
-        // Add textfield 2
+        // Add textfield importo
        
         textfield2.layer.borderColor = UIColor.purpleColor().CGColor
         textfield2.layer.borderWidth = 1.5
@@ -118,16 +118,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         textfield2.placeholder = "Importo"
         textfield2.textAlignment = NSTextAlignment.Center
         subview.addSubview(textfield2)
-        
-        // Add textfield 3
-        let textfield3 = UITextField(frame: CGRectMake(x,textfield2.frame.maxY + 10,180,25))
-        textfield3.layer.borderColor = UIColor.purpleColor().CGColor
-        textfield3.layer.borderWidth = 1.5
-        textfield3.layer.cornerRadius = 5
-        textfield3.layer.borderColor = UIColor.purpleColor().CGColor
-        textfield3.placeholder = "Tipo conto"
-        textfield3.textAlignment = NSTextAlignment.Center
-        //subview.addSubview(textfield3)
         
         // Add picker
         
