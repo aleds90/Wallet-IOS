@@ -100,6 +100,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E1D30AC1D2BDE6B00CB3125 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0EA479D71D2ABE50000C7153 /* MovimentoCartaCredito+CoreDataProperties.swift */,
+				0EA479D81D2ABE50000C7153 /* MovimentoCartaCredito.swift */,
+				0EA479D91D2ABE50000C7153 /* CartaCredito+CoreDataProperties.swift */,
+				0EA479DA1D2ABE50000C7153 /* CartaCredito.swift */,
+				0EA479DB1D2ABE50000C7153 /* ContoCorrente+CoreDataProperties.swift */,
+				0EA479DC1D2ABE50000C7153 /* ContoCorrente.swift */,
+				0EA479DD1D2ABE50000C7153 /* TipoConto+CoreDataProperties.swift */,
+				0EA479DE1D2ABE50000C7153 /* TipoConto.swift */,
+				0EA479DF1D2ABE50000C7153 /* MovimentoContoCorrente+CoreDataProperties.swift */,
+				0EA479E01D2ABE50000C7153 /* MovimentoContoCorrente.swift */,
+				0EA479E11D2ABE50000C7153 /* Causale+CoreDataProperties.swift */,
+				0EA479E21D2ABE50000C7153 /* Causale.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		0E1D30AE1D2BDEC300CB3125 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0EA479761D2AB85E000C7153 /* ViewController.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		0EA479681D2AB85E000C7153 = {
 			isa = PBXGroup;
 			children = (
@@ -123,25 +150,14 @@
 		0EA479731D2AB85E000C7153 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				0E1D30AE1D2BDEC300CB3125 /* view */,
+				0E1D30AC1D2BDE6B00CB3125 /* model */,
 				0EA479741D2AB85E000C7153 /* AppDelegate.swift */,
-				0EA479761D2AB85E000C7153 /* ViewController.swift */,
 				0EA479781D2AB85E000C7153 /* Main.storyboard */,
 				0EA4797E1D2AB85E000C7153 /* Assets.xcassets */,
 				0EA479801D2AB85E000C7153 /* LaunchScreen.storyboard */,
 				0EA479831D2AB85E000C7153 /* Info.plist */,
 				0EA4797B1D2AB85E000C7153 /* Wallet.xcdatamodeld */,
-				0EA479D71D2ABE50000C7153 /* MovimentoCartaCredito+CoreDataProperties.swift */,
-				0EA479D81D2ABE50000C7153 /* MovimentoCartaCredito.swift */,
-				0EA479D91D2ABE50000C7153 /* CartaCredito+CoreDataProperties.swift */,
-				0EA479DA1D2ABE50000C7153 /* CartaCredito.swift */,
-				0EA479DB1D2ABE50000C7153 /* ContoCorrente+CoreDataProperties.swift */,
-				0EA479DC1D2ABE50000C7153 /* ContoCorrente.swift */,
-				0EA479DD1D2ABE50000C7153 /* TipoConto+CoreDataProperties.swift */,
-				0EA479DE1D2ABE50000C7153 /* TipoConto.swift */,
-				0EA479DF1D2ABE50000C7153 /* MovimentoContoCorrente+CoreDataProperties.swift */,
-				0EA479E01D2ABE50000C7153 /* MovimentoContoCorrente.swift */,
-				0EA479E11D2ABE50000C7153 /* Causale+CoreDataProperties.swift */,
-				0EA479E21D2ABE50000C7153 /* Causale.swift */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -536,6 +552,7 @@
 				0EA4799E1D2AB85E000C7153 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EA4799F1D2AB85E000C7153 /* Build configuration list for PBXNativeTarget "WalletTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +561,7 @@
 				0EA479A11D2AB85E000C7153 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EA479A21D2AB85E000C7153 /* Build configuration list for PBXNativeTarget "WalletUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +570,7 @@
 				0EA479A41D2AB85E000C7153 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
