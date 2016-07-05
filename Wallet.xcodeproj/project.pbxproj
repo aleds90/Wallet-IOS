@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1D30B01D2BE30E00CB3125 /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D30AF1D2BE30E00CB3125 /* CellViewController.swift */; };
 		0EA479751D2AB85E000C7153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479741D2AB85E000C7153 /* AppDelegate.swift */; };
 		0EA479771D2AB85E000C7153 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479761D2AB85E000C7153 /* ViewController.swift */; };
 		0EA4797A1D2AB85E000C7153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EA479781D2AB85E000C7153 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1D30AF1D2BE30E00CB3125 /* CellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
 		0EA479711D2AB85E000C7153 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA479741D2AB85E000C7153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EA479761D2AB85E000C7153 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				0EA479761D2AB85E000C7153 /* ViewController.swift */,
+				0E1D30AF1D2BE30E00CB3125 /* CellViewController.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			files = (
 				0EA479EB1D2ABE50000C7153 /* MovimentoContoCorrente+CoreDataProperties.swift in Sources */,
 				0EA479E51D2ABE50000C7153 /* CartaCredito+CoreDataProperties.swift in Sources */,
+				0E1D30B01D2BE30E00CB3125 /* CellViewController.swift in Sources */,
 				0EA479ED1D2ABE50000C7153 /* Causale+CoreDataProperties.swift in Sources */,
 				0EA479E91D2ABE50000C7153 /* TipoConto+CoreDataProperties.swift in Sources */,
 				0EA479EA1D2ABE50000C7153 /* TipoConto.swift in Sources */,

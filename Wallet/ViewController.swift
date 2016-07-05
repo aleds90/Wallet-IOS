@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //MARKS: Override UIViewController
 
@@ -22,7 +22,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    //MARKS: Override UITableViewDelegate
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("CellView", forIndexPath: indexPath) as! CellViewController
+        
+        return cell
+    }
+    
+    
 
 }
 
