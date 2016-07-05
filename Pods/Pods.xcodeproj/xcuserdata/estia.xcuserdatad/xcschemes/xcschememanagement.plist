@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Wallet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WalletTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WalletUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SCLAlertView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0E467647BC888F496528BFD13E9BB2D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>115E8C980EAB118641B9807C80A31962</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71D08BFD5D717F7CB47984AC45EFC6A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CBC842EE06306B910D691943B030F03</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
