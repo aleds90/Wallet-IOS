@@ -119,12 +119,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let alert = SCLAlertView(appearance: appearance)
         
         // Creat the subview
-        let subview = UIView(frame: CGRectMake(0,0,216,135))
+        let subview = UIView(frame: CGRectMake(0,0,216,205))
         let x = (subview.frame.width - 180) / 2
         
         let textfield1 = UITextField(frame: CGRectMake(x, 10,180,25))
         let textfield2 = UITextField(frame: CGRectMake(x,textfield1.frame.maxY + 10,180,25))
-        let pickerView = UIPickerView(frame: CGRectMake(x,textfield2.frame.maxY + 10,180,42))
+        let pickerView = UIPickerView(frame: CGRectMake(x,textfield2.frame.maxY + 10,180,102))
         pickerView.delegate = self
         pickerView.dataSource = self
 
@@ -167,7 +167,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let importo:Int! = Int(textfield2.text!)
                 let tipoConto = self.getTipoContoByName(self.tipoContoSelected)
                 ContoCorrente.createInManagedObjectContext(self.managedObjectContext, nome: nome, importo: importo, tipoconto: tipoConto!)
-                SCLAlertView().showSuccess("Conto creato", subTitle: "Il nuovo conto è stato correttamente aggiunto alla tua lista!")
                 self.getContoCorrenteFromCoreData()
                 self.tableView.reloadData()
             }else{
