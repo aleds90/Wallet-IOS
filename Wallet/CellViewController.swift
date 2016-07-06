@@ -10,5 +10,7 @@ import UIKit
 
 class CellViewController: UITableViewCell {
 
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var importoLabel: UILabel!
     
 }

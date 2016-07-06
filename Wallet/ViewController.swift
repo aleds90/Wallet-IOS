@@ -13,6 +13,8 @@ import SCLAlertView
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate{
     
     //MARKS: Properties
+    @IBOutlet weak var tableView: UITableView!
+    
     var tipoContoSelected = "Conto Bancario"
     var listaTipoConto: [String] = ["Conto Bancario", "Conto Paypal", "Conto MoneyBookers", "Conto Neteller", "Altro..."]
     var listaContoCorrente = [ContoCorrente]()
@@ -28,14 +30,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         title = "I tuoi conti"
         // Populate listaContoCorrente
         getContoCorrenteFromCoreData()
-        // Creating TipoConto for testing
-        creatingTipoConto()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+    }
+    
     
     //MARKS: Override UITableViewDelegate
     
@@ -45,10 +50,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CellView", forIndexPath: indexPath) as! CellViewController
+        let contoCorrente = listaContoCorrente[indexPath.item]
+        cell.nomeLabel.text = contoCorrente.nome
+        cell.importoLabel.text = String(contoCorrente.importo!)
         
         return cell
     }
     
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (editingStyle == .Delete) {
+            let contoCorrenteToDelete = listaContoCorrente[indexPath.row]
+            listaContoCorrente.removeAtIndex(indexPath.row)
+            managedObjectContext.deleteObject(contoCorrenteToDelete)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            
+        }
+
+    }
     //MARKS: Override UIPickerViewDataSource
     
     func numberOfComponentsInPickerView(_: UIPickerView) -> Int {
@@ -146,6 +168,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let tipoConto = self.getTipoContoByName(self.tipoContoSelected)
                 ContoCorrente.createInManagedObjectContext(self.managedObjectContext, nome: nome, importo: importo, tipoconto: tipoConto!)
                 SCLAlertView().showSuccess("Conto creato", subTitle: "Il nuovo conto è stato correttamente aggiunto alla tua lista!")
+                self.getContoCorrenteFromCoreData()
+                self.tableView.reloadData()
             }else{
                 SCLAlertView().showError("Errore Crezione", subTitle: "Devi completare entrambi i campi per poter creare un conto!")
             }
@@ -191,10 +215,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return nil
     }
     
-    func creatingTipoConto() {
-        TipoConto.createInManagedObjectContext(managedObjectContext, nome: "Conto Bancario")
-        TipoConto.createInManagedObjectContext(managedObjectContext, nome: "Conto Neteller")
-    }
 
 }
 

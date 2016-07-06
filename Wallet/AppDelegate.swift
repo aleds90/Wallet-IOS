@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        preloadData()
         return true
     }
 
@@ -106,6 +106,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func preloadData() {
+        removeData()
+        let listaTipoConto: [String] = ["Conto Bancario", "Conto Paypal", "Conto MoneyBookers", "Conto Neteller", "Altro..."]
+        for item in listaTipoConto {
+            TipoConto.createInManagedObjectContext(managedObjectContext, nome: item)
+        }
+    }
+    
+    func removeData(){
+        let fetchRequest = NSFetchRequest(entityName: "TipoConto")
+        do {
+            let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+            if let results = try managedObjectContext.executeFetchRequest(fetchRequest) as?[TipoConto]{
+                
+                if(results.count>0){
+                    for logitem in results {
+                        managedObjectContext.deleteObject(logitem)
+                    }
+                    
+                } else {
+                    print("la lista è vuota")
+                }
+                
+                
+            }
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
 
+    }
 }
+
+
 
