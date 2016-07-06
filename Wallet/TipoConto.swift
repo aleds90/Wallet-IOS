@@ -13,5 +13,16 @@ import CoreData
 class TipoConto: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
+    class func createInManagedObjectContext(moc: NSManagedObjectContext, nome: String) -> TipoConto {
+        let newItem = NSEntityDescription.insertNewObjectForEntityForName("TipoConto", inManagedObjectContext: moc) as! TipoConto
+        newItem.nome = nome
+        do{
+            try moc.save()
+        }catch let error as NSError{
+            print("Could not save \(error), \(error.userInfo)")
+        }
+        return newItem
+    }
+
 
 }

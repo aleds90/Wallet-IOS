@@ -13,6 +13,7 @@ import SCLAlertView
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate{
     
     //MARKS: Properties
+    var tipoContoSelected = "Conto Bancario"
     var listaTipoConto: [String] = ["Conto Bancario", "Conto Paypal", "Conto MoneyBookers", "Conto Neteller", "Altro..."]
     var listaContoCorrente = [ContoCorrente]()
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
@@ -27,7 +28,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         title = "I tuoi conti"
         // Populate listaContoCorrente
         getContoCorrenteFromCoreData()
-        
+        // Creating TipoConto for testing
+        creatingTipoConto()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //MARKS: Override UITableViewDelegate
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return listaContoCorrente.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -73,6 +75,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 36.0
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        tipoContoSelected = listaTipoConto[row]
     }
     
     //MARKS: Fuctions
@@ -134,11 +140,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         }
         alert.addButton("Conferma") {
-            print(textfield1.text)
-            print(textfield2.text)
-            
+            if(textfield1.text != "" && textfield2.text != ""){
+                let nome:String! = textfield1.text
+                let importo:Int! = Int(textfield2.text!)
+                let tipoConto = self.getTipoContoByName(self.tipoContoSelected)
+                ContoCorrente.createInManagedObjectContext(self.managedObjectContext, nome: nome, importo: importo, tipoconto: tipoConto!)
+                SCLAlertView().showSuccess("Conto creato", subTitle: "Il nuovo conto è stato correttamente aggiunto alla tua lista!")
+            }else{
+                SCLAlertView().showError("Errore Crezione", subTitle: "Devi completare entrambi i campi per poter creare un conto!")
+            }
         }
-        
         alert.showEdit("Crea Conto", subTitle: "")
     }
     
@@ -159,6 +170,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
         }
+    }
+    
+    func getTipoContoByName(nome: String) -> TipoConto?{
+        let fetchRequest = NSFetchRequest(entityName: "TipoConto")
+        let predicate = NSPredicate(format: "nome = %@", nome)
+        fetchRequest.predicate = predicate
+        do {
+            let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+            if let results = try managedObjectContext.executeFetchRequest(fetchRequest) as?[TipoConto]{
+                if(results.count>0){
+                    return results[0]
+                } else {
+                   return nil
+                }
+            }
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        return nil
+    }
+    
+    func creatingTipoConto() {
+        TipoConto.createInManagedObjectContext(managedObjectContext, nome: "Conto Bancario")
+        TipoConto.createInManagedObjectContext(managedObjectContext, nome: "Conto Neteller")
     }
 
 }
