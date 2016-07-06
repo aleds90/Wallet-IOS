@@ -10,7 +10,6 @@
 import CoreData
 import UIKit
 import SCLAlertView
-import FoldingTabBar
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate{
     
@@ -75,6 +74,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
 
     }
+    
     //MARKS: Override UIPickerViewDataSource
     
     func numberOfComponentsInPickerView(_: UIPickerView) -> Int {
