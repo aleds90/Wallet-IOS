@@ -58,7 +58,8 @@
         <!--Folding Tab Bar Controller-->
         <scene sceneID="QNG-sj-B26">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Di9-o5-98q" customClass="YALFoldingTabBarController" sceneMemberID="viewController">
+                <tabBarController id="Di9-o5-98q" customClass="YALFoldingTabBarController" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="M50-DT-9mi">
                         <autoresizingMask key="autoresizingMask"/>
