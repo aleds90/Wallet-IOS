@@ -18,7 +18,7 @@ extension MovimentoCartaCredito {
     @NSManaged var nome: String?
     @NSManaged var importo: NSNumber?
     @NSManaged var data: NSDate?
-    @NSManaged var causale: NSManagedObject?
-    @NSManaged var cartaCredito: NSManagedObject?
+    @NSManaged var causale: Causale?
+    @NSManaged var cartaCredito: CartaCredito?
 
 }

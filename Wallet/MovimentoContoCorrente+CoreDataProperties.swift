@@ -19,7 +19,7 @@ extension MovimentoContoCorrente {
     @NSManaged var nome: String?
     @NSManaged var data: NSDate?
     @NSManaged var rendicontato: NSNumber?
-    @NSManaged var causale: NSManagedObject?
+    @NSManaged var causale: Causale?
     @NSManaged var contoCorrente: ContoCorrente?
 
 }

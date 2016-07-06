@@ -17,7 +17,7 @@ extension ContoCorrente {
     @NSManaged var id: NSNumber?
     @NSManaged var nome: String?
     @NSManaged var importo: NSNumber?
-    @NSManaged var tipoConto: NSManagedObject?
+    @NSManaged var tipoConto: TipoConto?
     @NSManaged var listaMovimentoContoCorrente: NSSet?
     @NSManaged var listaCartaCredito: NSSet?
 

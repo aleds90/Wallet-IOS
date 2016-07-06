@@ -53,6 +53,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let contoCorrente = listaContoCorrente[indexPath.item]
         cell.nomeLabel.text = contoCorrente.nome
         cell.importoLabel.text = String(contoCorrente.importo!)
+        let nomeTipoConto = contoCorrente.tipoConto!.nome
+        print(nomeTipoConto)
         
         return cell
     }

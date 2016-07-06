@@ -18,6 +18,6 @@ extension CartaCredito {
     @NSManaged var nome: String?
     @NSManaged var importo: NSNumber?
     @NSManaged var listaMovimentoCartaCredito: NSSet?
-    @NSManaged var contoCorrente: NSManagedObject?
+    @NSManaged var contoCorrente: ContoCorrente?
 
 }
