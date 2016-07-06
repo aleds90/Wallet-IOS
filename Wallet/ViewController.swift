@@ -136,6 +136,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alert.addButton("Conferma") {
             print(textfield1.text)
             print(textfield2.text)
+            
         }
         
         alert.showEdit("Crea Conto", subTitle: "")
