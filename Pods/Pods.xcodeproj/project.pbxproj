@@ -7,79 +7,136 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A72A012631C8EB76FCA913903BAD4D4 /* YALCustomHeightTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = DF03636EFCCF73206111B7416F27A8C3 /* YALCustomHeightTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C561D60BDE8E17FC817370B9418AB85 /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE04B959942500FC3C46F2EE513B38E /* YALTabBarItem.m */; };
+		1F2C373E897EF762F76225061ECCEE0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */; };
+		261A45494ED892F8538C5C737E0C3211 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		271D039D7203343766B99794F290FE36 /* YALFoldingTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9988BC01513020827FFB7A6907F23422 /* YALFoldingTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28244D4667F4C678ECC77D634EB31E0C /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A938A36AE30AE43C7E39C4366ABA3 /* CAAnimation+YALTabBarViewAnimations.m */; };
+		2AE1F9CCD016A74525F97A226E3D4BF2 /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E1DC0DBB10E4801082875C552E319 /* YALCustomHeightTabBar.m */; };
+		3072D28EE30F6E59376535CCA84A8F39 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 90A52D791755FB88C8AB4324800793F6 /* Info.plist */; };
+		315F73BFB4F71361F9DEE42E941E636F /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D04F2082E54760A6FA1F5642519CF72 /* YALAnimatingTabBarConstants.m */; };
+		368910D89AC1BE341CD25C093B50B456 /* FoldingTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C78938BBEA3F87212FA4C389EE442B /* FoldingTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3705AE71744625F0DCF1111995E84651 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		3777AA34E48E74CCF08453DA4A86943C /* YALTabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF8D1CE8F25318A8B70677517A598D7 /* YALTabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37B4B86D10AB590BAA3A2A263CCBF42E /* Pods-WalletTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72818186440C03F0B19B1231F7B50913 /* Pods-WalletTests-dummy.m */; };
-		753D0415D8606DD5F33D16A71ACBB57A /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = D906AAE62BFE7CDD5E0E85C784E9B739 /* Info.plist */; };
-		78694E89ACA54EB01A474DCAE66F5EFA /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB50C44151772A3AB8FB57470A34BB7 /* SCLAlertView-dummy.m */; };
+		40066992A00C6882C0E881D89655FB93 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = D018CA119D1633AC43263EB0514D0B09 /* Info.plist */; };
+		54B3B2F379AEBAAD8832AEA8757255DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */; };
 		7C6C44907DF2BAE13D30F4BE8A96BA22 /* Pods-WalletUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F45D0873099EDBB9A9D304B424BB324D /* Pods-WalletUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		858B115064208D275835F5353C30ECC4 /* Pods-Wallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EFA589BB042F39E3556EBA3998771 /* Pods-Wallet-dummy.m */; };
-		8CC669A612E4C5B8ACB6E983BCC561D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		90A7F7ECA52C743DDD13830F4975BD6A /* Pods-Wallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E822D8A3B0337C0E19A38E0F7A9363E /* Pods-Wallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99E72830A3DAA039D22C644D389EA201 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E3B3CC5FC7AD45B1063A4B9FB837B92 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CF652E56798495ADE8B5A67CB2B3FA5 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289F362B7CB9A089E134B5A9D79AC7C0 /* SCLExtensions.swift */; };
-		ADABD883C4D4C1EBC25803B64423FEB5 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7169530259B710DA8B63C485D9F464 /* SCLAlertView.swift */; };
-		BA558D01AEFA7FCD7F2C57AB7DB37C8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		7E37A70AB848B6CBD218DBA5A9EAC9A0 /* CAAnimation+YALTabBarViewAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = C306A0EADA496DD589263DABF97DB1BD /* CAAnimation+YALTabBarViewAnimations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83FD0D57F24A06EB1EC1C07A14329135 /* CATransaction+TransactionWithAnimationsAndCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = 92E42492885FD9F4CF4FDFA4FA3BEBE3 /* CATransaction+TransactionWithAnimationsAndCompletion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87D5D3B69704E9A970F8FEE675D47DD8 /* YALFoldingTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCF28C6C968E2CD5C227B85CDF39EC6 /* YALFoldingTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CC669A612E4C5B8ACB6E983BCC561D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		9A1ADC5FE608D170E838F8F434947E4E /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 039E026C8EDE25EA406CD6BF3A193B18 /* YALSpringAnimation.m */; };
+		9F209F7C87A4D7BB7100D40553EBF95C /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C037FB8A6DA5CAB26580F0FCDFFDFD8F /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6E54C5CEEC9ED0A812145314D6B0EF6 /* FoldingTabBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E93E55BDF78BA812ACC3E809EE5C72DF /* FoldingTabBar-dummy.m */; };
+		B79EC8423675FC0F66C241B978200771 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DA61DF3C21558E862A17959A5A7F74 /* SCLAlertView.swift */; };
+		CB7DF43094F9211A40A81D9542025114 /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6153FB5BBCA0210CCC49739DFFC0B3E /* YALFoldingTabBarController.m */; };
+		CCB9257C46D18D1C4FC6BC4EA425AB30 /* YALSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 95EB44A2F7D5FD805C331813BAE266B6 /* YALSpringAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF3AD196549649381A401ED0C71C4F12 /* Pods-WalletUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7BAE30086679F7C619462F48DFD65 /* Pods-WalletUITests-dummy.m */; };
-		D8855C0B602282C2EACDB0E87B2F5302 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		D3D5EA88DBEBC5DFF2AF7943B57BE9D7 /* FoldingTabBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17FEDAA8E10DF0C477A3838BC5CE333F /* FoldingTabBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8535563D6F88CECC172307F4E78DB4D /* YALAnimatingTabBarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E09D899EE3D90CF05B4686E437724AE /* YALAnimatingTabBarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8855C0B602282C2EACDB0E87B2F5302 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		E12BA536A1D142DAB72E43CEA6938515 /* Pods-Wallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E822D8A3B0337C0E19A38E0F7A9363E /* Pods-Wallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA8113416720D3AD6091D5E565ECFED0 /* Pods-WalletTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F25A56E40B11A1407E8150D38BF650EA /* Pods-WalletTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE2B1C79163F778B872427D72B9717B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		ED49B2BBB45AD76B5D24FCEC12BCEF61 /* Pods-Wallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EFA589BB042F39E3556EBA3998771 /* Pods-Wallet-dummy.m */; };
+		EDBC0E62F73052D0153D18894083750D /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5080EEDF7E16E1FE3408A7FF1DB499E /* SCLAlertView-dummy.m */; };
+		F34958CA3D2B771F489D52DEB99A29FB /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E2C3BEE18427770CF60C5DCDD2E47 /* SCLExtensions.swift */; };
+		F3600728FC5C5CAB2982DD0879721279 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		F3C7280A7188E52AC09439C0EB5AD145 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F41A8233D88C16CC09C4A721BC6292 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		F3FE4E494481443548C41A842F9AA54B /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA15D2EEB44A1B0FEB25F35D5D88389 /* YALFoldingTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6F0D16BDD5E546BB64C56AE70058FB7A /* PBXContainerItemProxy */ = {
+		7A43ED4016FB7900A9F47A2183FF6C33 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7CBC842EE06306B910D691943B030F03;
+			remoteGlobalIDString = 9091229326D8C5C3D0072B04E6AD712A;
+			remoteInfo = FoldingTabBar;
+		};
+		EE48828C85F6A3B709B6143678A40EF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69000F52D4F15D24E698DA1BDD2422AA;
 			remoteInfo = SCLAlertView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0321D141234A7FE06F118C19348F0EEE /* Pods-WalletUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WalletUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		039E026C8EDE25EA406CD6BF3A193B18 /* YALSpringAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YALSpringAnimation.m; path = FoldingTabBar/Animation/YALSpringAnimation/YALSpringAnimation.m; sourceTree = "<group>"; };
 		046BAC542CCED52B957902B22AC63A5B /* Pods-WalletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WalletTests.modulemap"; sourceTree = "<group>"; };
-		08D7E6D9F206912D02604F83DFC712A5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D3DE901F97C82E75E516A9E635CCE1B /* Pods_WalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E3B3CC5FC7AD45B1063A4B9FB837B92 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		0470DA6253470B584FD139BE8A91F0F0 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0D46E35B7F66D9C9C04D0ADBEF00D38A /* FoldingTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoldingTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DA15D2EEB44A1B0FEB25F35D5D88389 /* YALFoldingTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YALFoldingTabBar.m; path = FoldingTabBar/View/FoldingTabBar/YALFoldingTabBar.m; sourceTree = "<group>"; };
+		0DCF28C6C968E2CD5C227B85CDF39EC6 /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YALFoldingTabBarController.h; path = FoldingTabBar/Controller/FoldingTabBarController/YALFoldingTabBarController.h; sourceTree = "<group>"; };
 		1383C53A46AD2AD5476ED290E7FE8BFE /* Pods-WalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		15DAEAA960269EE52AA3EDCF6F3029E1 /* Pods-WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		15EF797EFF007304C047F4EF15601259 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17FEDAA8E10DF0C477A3838BC5CE333F /* FoldingTabBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FoldingTabBar-umbrella.h"; sourceTree = "<group>"; };
 		1A417103FFD87BF66DF186A0FF0E39B7 /* Pods-Wallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallet-acknowledgements.plist"; sourceTree = "<group>"; };
 		1C58DBAF3DA4345EB0B1A380CB6F337A /* Pods-WalletUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WalletUITests.modulemap"; sourceTree = "<group>"; };
 		22D1FDEE379664AAA55331E9088B8C0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		289F362B7CB9A089E134B5A9D79AC7C0 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
+		23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		2A7EFA589BB042F39E3556EBA3998771 /* Pods-Wallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Wallet-dummy.m"; sourceTree = "<group>"; };
+		2E09D899EE3D90CF05B4686E437724AE /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YALAnimatingTabBarConstants.h; path = FoldingTabBar/Constants/YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
 		2EA1BBEA8F2C9356F6EEE0BD184317A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FC03530515EAAC282031EF45F51EA17 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3121703A358F8F97562BC635EB676A6C /* Pods-Wallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Wallet.modulemap"; sourceTree = "<group>"; };
-		35591390A87A1DC9301FE7AC8BD615B2 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
 		3AD0267485E901B468B4EE2BE5901D3A /* Pods-WalletTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WalletTests-frameworks.sh"; sourceTree = "<group>"; };
 		446B54414D9D2162AB0C744DCAB2A68B /* Pods-WalletTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WalletTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46BCFFC0F8AEE5D9AB32BC88186424A6 /* FoldingTabBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FoldingTabBar.xcconfig; sourceTree = "<group>"; };
+		4AB33155EB513EDD11E7A0E9E955589C /* Pods_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		524E2C3BEE18427770CF60C5DCDD2E47 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
 		5854746FF07165BE24757F5534AC67B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F7169530259B710DA8B63C485D9F464 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		5D04F2082E54760A6FA1F5642519CF72 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YALAnimatingTabBarConstants.m; path = FoldingTabBar/Constants/YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		5FF62FB1B99B437E8345F87B3B0CAAFE /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		66DA61DF3C21558E862A17959A5A7F74 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
 		71DB15AB627CEF0DA57DCE87406A5A32 /* Pods-Wallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallet-frameworks.sh"; sourceTree = "<group>"; };
 		72818186440C03F0B19B1231F7B50913 /* Pods-WalletTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WalletTests-dummy.m"; sourceTree = "<group>"; };
-		75115CAF52FAA94960A288EFA9DFC4FE /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B4A81090900A696DE23B12BE39A56E9 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		72D091FDE4FFDE36D41D68D9240092BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DB0CD0729EAA4FF554DFF842DE75D18 /* Pods-WalletTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WalletTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7E822D8A3B0337C0E19A38E0F7A9363E /* Pods-Wallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Wallet-umbrella.h"; sourceTree = "<group>"; };
+		7FE04B959942500FC3C46F2EE513B38E /* YALTabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YALTabBarItem.m; path = FoldingTabBar/Model/TabBarItem/YALTabBarItem.m; sourceTree = "<group>"; };
+		80E5E1F9F0AE748B1D124B4FC77D1B3D /* FoldingTabBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FoldingTabBar-prefix.pch"; sourceTree = "<group>"; };
 		83492762B7B793C7C676FD70442BAF32 /* Pods-Wallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallet-resources.sh"; sourceTree = "<group>"; };
+		89C78938BBEA3F87212FA4C389EE442B /* FoldingTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FoldingTabBar.h; path = FoldingTabBar/Resources/FoldingTabBar.h; sourceTree = "<group>"; };
 		8BA7BAE30086679F7C619462F48DFD65 /* Pods-WalletUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WalletUITests-dummy.m"; sourceTree = "<group>"; };
+		90A52D791755FB88C8AB4324800793F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = FoldingTabBar/Resources/Info.plist; sourceTree = "<group>"; };
+		92E42492885FD9F4CF4FDFA4FA3BEBE3 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CATransaction+TransactionWithAnimationsAndCompletion.h"; path = "FoldingTabBar/Category/CATransaction/CATransaction+TransactionWithAnimationsAndCompletion/CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A4F568E1EB679E0925C412632F1ACC41 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		95EB44A2F7D5FD805C331813BAE266B6 /* YALSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YALSpringAnimation.h; path = FoldingTabBar/Animation/YALSpringAnimation/YALSpringAnimation.h; sourceTree = "<group>"; };
+		9988BC01513020827FFB7A6907F23422 /* YALFoldingTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YALFoldingTabBar.h; path = FoldingTabBar/View/FoldingTabBar/YALFoldingTabBar.h; sourceTree = "<group>"; };
+		9E0E1DC0DBB10E4801082875C552E319 /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YALCustomHeightTabBar.m; path = FoldingTabBar/View/CustomHeightTabBar/YALCustomHeightTabBar.m; sourceTree = "<group>"; };
+		A67A938A36AE30AE43C7E39C4366ABA3 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAAnimation+YALTabBarViewAnimations.m"; path = "FoldingTabBar/Category/CAAnimation/CAAnimation+YALTabBarViewAnimations/CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A8368DD7DC6F74E3508E1D574A1D75B1 /* Pods-Wallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Wallet-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A864880D9FDE3C87CA3B30EA47430DCB /* Pods-WalletUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WalletUITests-frameworks.sh"; sourceTree = "<group>"; };
 		AE0DB5385730EC7B24F9FFB030C34FFA /* Pods-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA748A3933655D5B334F38A9A6AC685 /* Pods-WalletTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WalletTests-resources.sh"; sourceTree = "<group>"; };
+		B029C4588DDC2A93F79A982B255F6824 /* Pods_WalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C037FB8A6DA5CAB26580F0FCDFFDFD8F /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		C095FAE8F6A615A418E96CB937430AF9 /* FoldingTabBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FoldingTabBar.modulemap; sourceTree = "<group>"; };
+		C306A0EADA496DD589263DABF97DB1BD /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAAnimation+YALTabBarViewAnimations.h"; path = "FoldingTabBar/Category/CAAnimation/CAAnimation+YALTabBarViewAnimations/CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
+		C6153FB5BBCA0210CCC49739DFFC0B3E /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YALFoldingTabBarController.m; path = FoldingTabBar/Controller/FoldingTabBarController/YALFoldingTabBarController.m; sourceTree = "<group>"; };
 		C6A62FDE63E26B5102860F3A4998ACF9 /* Pods-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet.release.xcconfig"; sourceTree = "<group>"; };
-		CA83BC26D00BBD26CD2E4F1205A2E5D5 /* Pods_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C831C330163ACB36FAE17030C1A0AD33 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
 		CE19207F62C04F3C8639CF5A6876BE76 /* Pods-WalletUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WalletUITests-resources.sh"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D906AAE62BFE7CDD5E0E85C784E9B739 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = SCLAlertView/Info.plist; sourceTree = "<group>"; };
+		D018CA119D1633AC43263EB0514D0B09 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = SCLAlertView/Info.plist; sourceTree = "<group>"; };
+		D7CD8BD53ABE362F9CABF06C11315889 /* Pods_WalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF03636EFCCF73206111B7416F27A8C3 /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YALCustomHeightTabBar.h; path = FoldingTabBar/View/CustomHeightTabBar/YALCustomHeightTabBar.h; sourceTree = "<group>"; };
 		E283D655431F76DFF3CC9455767FB8C3 /* Pods-WalletUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WalletUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E5080EEDF7E16E1FE3408A7FF1DB499E /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		E93E55BDF78BA812ACC3E809EE5C72DF /* FoldingTabBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FoldingTabBar-dummy.m"; sourceTree = "<group>"; };
 		E94D25A951676E271907C7908EB1540C /* Pods-WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFF8D1CE8F25318A8B70677517A598D7 /* YALTabBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YALTabBarItem.h; path = FoldingTabBar/Model/TabBarItem/YALTabBarItem.h; sourceTree = "<group>"; };
 		F25A56E40B11A1407E8150D38BF650EA /* Pods-WalletTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WalletTests-umbrella.h"; sourceTree = "<group>"; };
+		F3F41A8233D88C16CC09C4A721BC6292 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CATransaction+TransactionWithAnimationsAndCompletion.m"; path = "FoldingTabBar/Category/CATransaction/CATransaction+TransactionWithAnimationsAndCompletion/CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
 		F45D0873099EDBB9A9D304B424BB324D /* Pods-WalletUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WalletUITests-umbrella.h"; sourceTree = "<group>"; };
-		FA2A11134CA2C33B017E6B6AF0951002 /* Pods_WalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB58EA50D918894F77C1839654E7081E /* Pods-WalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WalletUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FCB50C44151772A3AB8FB57470A34BB7 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,19 +148,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49F7D708DCEE81452487A7D92CB750B4 /* Frameworks */ = {
+		4CCAE973C25D1C5E09E1B8EFC1BB33E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE2B1C79163F778B872427D72B9717B6 /* Foundation.framework in Frameworks */,
+				F3600728FC5C5CAB2982DD0879721279 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B055FF78A1FB5F68658BC4C15971E9A0 /* Frameworks */ = {
+		930BE908052B01F1D5CDE90778B7EDEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA558D01AEFA7FCD7F2C57AB7DB37C8B /* Foundation.framework in Frameworks */,
+				3705AE71744625F0DCF1111995E84651 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,51 +172,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBE7B57E1B69660C8450CF92896B6D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261A45494ED892F8538C5C737E0C3211 /* Foundation.framework in Frameworks */,
+				54B3B2F379AEBAAD8832AEA8757255DA /* QuartzCore.framework in Frameworks */,
+				1F2C373E897EF762F76225061ECCEE0F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		172A6936667D65EC2D3643EEF9AAF49A /* SCLAlertView */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D906AAE62BFE7CDD5E0E85C784E9B739 /* Info.plist */,
-				6F7169530259B710DA8B63C485D9F464 /* SCLAlertView.swift */,
-				289F362B7CB9A089E134B5A9D79AC7C0 /* SCLExtensions.swift */,
-				3D437BABF8D19805F916E3BDD942CFC0 /* Support Files */,
+				DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */,
 			);
-			path = SCLAlertView;
-			sourceTree = "<group>";
-		};
-		32A149D41B759A2C33A8527CFCA0738D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CA83BC26D00BBD26CD2E4F1205A2E5D5 /* Pods_Wallet.framework */,
-				0D3DE901F97C82E75E516A9E635CCE1B /* Pods_WalletTests.framework */,
-				FA2A11134CA2C33B017E6B6AF0951002 /* Pods_WalletUITests.framework */,
-				75115CAF52FAA94960A288EFA9DFC4FE /* SCLAlertView.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3D437BABF8D19805F916E3BDD942CFC0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				08D7E6D9F206912D02604F83DFC712A5 /* Info.plist */,
-				7B4A81090900A696DE23B12BE39A56E9 /* SCLAlertView.modulemap */,
-				35591390A87A1DC9301FE7AC8BD615B2 /* SCLAlertView.xcconfig */,
-				FCB50C44151772A3AB8FB57470A34BB7 /* SCLAlertView-dummy.m */,
-				A4F568E1EB679E0925C412632F1ACC41 /* SCLAlertView-prefix.pch */,
-				0E3B3CC5FC7AD45B1063A4B9FB837B92 /* SCLAlertView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SCLAlertView";
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		43EE643950E86EB1BCDA694DC3DCA4A9 /* Pods-Wallet */ = {
@@ -180,31 +211,76 @@
 			path = "Target Support Files/Pods-Wallet";
 			sourceTree = "<group>";
 		};
-		6BE4F74348AC5E05B914443FD790DE45 /* Pods */ = {
+		63A710755A742AAED36C3F7761A6BF7E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				172A6936667D65EC2D3643EEF9AAF49A /* SCLAlertView */,
+				B7B64B009574B975A30200B057B2781C /* FoldingTabBar */,
+				F04A1171D0E50182A31F4F54BA0A4F18 /* SCLAlertView */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		739F968732405206650080F8C26BDC0E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C095FAE8F6A615A418E96CB937430AF9 /* FoldingTabBar.modulemap */,
+				46BCFFC0F8AEE5D9AB32BC88186424A6 /* FoldingTabBar.xcconfig */,
+				E93E55BDF78BA812ACC3E809EE5C72DF /* FoldingTabBar-dummy.m */,
+				80E5E1F9F0AE748B1D124B4FC77D1B3D /* FoldingTabBar-prefix.pch */,
+				17FEDAA8E10DF0C477A3838BC5CE333F /* FoldingTabBar-umbrella.h */,
+				15EF797EFF007304C047F4EF15601259 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FoldingTabBar";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				6BE4F74348AC5E05B914443FD790DE45 /* Pods */,
-				32A149D41B759A2C33A8527CFCA0738D /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				63A710755A742AAED36C3F7761A6BF7E /* Pods */,
+				897F247E577B1914313BA9B2588640B5 /* Products */,
 				D190F68ADBCC4ADEAF025850CD848E53 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		897F247E577B1914313BA9B2588640B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				0D46E35B7F66D9C9C04D0ADBEF00D38A /* FoldingTabBar.framework */,
+				4AB33155EB513EDD11E7A0E9E955589C /* Pods_Wallet.framework */,
+				B029C4588DDC2A93F79A982B255F6824 /* Pods_WalletTests.framework */,
+				D7CD8BD53ABE362F9CABF06C11315889 /* Pods_WalletUITests.framework */,
+				2FC03530515EAAC282031EF45F51EA17 /* SCLAlertView.framework */,
 			);
-			name = Frameworks;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7B64B009574B975A30200B057B2781C /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C306A0EADA496DD589263DABF97DB1BD /* CAAnimation+YALTabBarViewAnimations.h */,
+				A67A938A36AE30AE43C7E39C4366ABA3 /* CAAnimation+YALTabBarViewAnimations.m */,
+				92E42492885FD9F4CF4FDFA4FA3BEBE3 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+				F3F41A8233D88C16CC09C4A721BC6292 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
+				89C78938BBEA3F87212FA4C389EE442B /* FoldingTabBar.h */,
+				90A52D791755FB88C8AB4324800793F6 /* Info.plist */,
+				2E09D899EE3D90CF05B4686E437724AE /* YALAnimatingTabBarConstants.h */,
+				5D04F2082E54760A6FA1F5642519CF72 /* YALAnimatingTabBarConstants.m */,
+				DF03636EFCCF73206111B7416F27A8C3 /* YALCustomHeightTabBar.h */,
+				9E0E1DC0DBB10E4801082875C552E319 /* YALCustomHeightTabBar.m */,
+				9988BC01513020827FFB7A6907F23422 /* YALFoldingTabBar.h */,
+				0DA15D2EEB44A1B0FEB25F35D5D88389 /* YALFoldingTabBar.m */,
+				0DCF28C6C968E2CD5C227B85CDF39EC6 /* YALFoldingTabBarController.h */,
+				C6153FB5BBCA0210CCC49739DFFC0B3E /* YALFoldingTabBarController.m */,
+				95EB44A2F7D5FD805C331813BAE266B6 /* YALSpringAnimation.h */,
+				039E026C8EDE25EA406CD6BF3A193B18 /* YALSpringAnimation.m */,
+				EFF8D1CE8F25318A8B70677517A598D7 /* YALTabBarItem.h */,
+				7FE04B959942500FC3C46F2EE513B38E /* YALTabBarItem.m */,
+				739F968732405206650080F8C26BDC0E /* Support Files */,
+			);
+			path = FoldingTabBar;
 			sourceTree = "<group>";
 		};
 		D190F68ADBCC4ADEAF025850CD848E53 /* Targets Support Files */ = {
@@ -235,6 +311,41 @@
 			path = "Target Support Files/Pods-WalletTests";
 			sourceTree = "<group>";
 		};
+		DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */,
+				23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */,
+				091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E30801DE397FFCBEEB16691985144B24 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72D091FDE4FFDE36D41D68D9240092BD /* Info.plist */,
+				5FF62FB1B99B437E8345F87B3B0CAAFE /* SCLAlertView.modulemap */,
+				C831C330163ACB36FAE17030C1A0AD33 /* SCLAlertView.xcconfig */,
+				E5080EEDF7E16E1FE3408A7FF1DB499E /* SCLAlertView-dummy.m */,
+				0470DA6253470B584FD139BE8A91F0F0 /* SCLAlertView-prefix.pch */,
+				C037FB8A6DA5CAB26580F0FCDFFDFD8F /* SCLAlertView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCLAlertView";
+			sourceTree = "<group>";
+		};
+		F04A1171D0E50182A31F4F54BA0A4F18 /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				D018CA119D1633AC43263EB0514D0B09 /* Info.plist */,
+				66DA61DF3C21558E862A17959A5A7F74 /* SCLAlertView.swift */,
+				524E2C3BEE18427770CF60C5DCDD2E47 /* SCLExtensions.swift */,
+				E30801DE397FFCBEEB16691985144B24 /* Support Files */,
+			);
+			path = SCLAlertView;
+			sourceTree = "<group>";
+		};
 		FDFED8BCC1EAAB70B43EA5233180C7FB /* Pods-WalletUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,11 +367,36 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7D2EC50EF79305DB30B87EC02CA85015 /* Headers */ = {
+		646076D56228D494B8DE6DF31E988917 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99E72830A3DAA039D22C644D389EA201 /* SCLAlertView-umbrella.h in Headers */,
+				E12BA536A1D142DAB72E43CEA6938515 /* Pods-Wallet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E79AA6A0E978B22FC1EFFCAEAC36D8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E37A70AB848B6CBD218DBA5A9EAC9A0 /* CAAnimation+YALTabBarViewAnimations.h in Headers */,
+				83FD0D57F24A06EB1EC1C07A14329135 /* CATransaction+TransactionWithAnimationsAndCompletion.h in Headers */,
+				D3D5EA88DBEBC5DFF2AF7943B57BE9D7 /* FoldingTabBar-umbrella.h in Headers */,
+				368910D89AC1BE341CD25C093B50B456 /* FoldingTabBar.h in Headers */,
+				D8535563D6F88CECC172307F4E78DB4D /* YALAnimatingTabBarConstants.h in Headers */,
+				0A72A012631C8EB76FCA913903BAD4D4 /* YALCustomHeightTabBar.h in Headers */,
+				271D039D7203343766B99794F290FE36 /* YALFoldingTabBar.h in Headers */,
+				87D5D3B69704E9A970F8FEE675D47DD8 /* YALFoldingTabBarController.h in Headers */,
+				CCB9257C46D18D1C4FC6BC4EA425AB30 /* YALSpringAnimation.h in Headers */,
+				3777AA34E48E74CCF08453DA4A86943C /* YALTabBarItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5529BAFC6419D95D25609737C37998C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F209F7C87A4D7BB7100D40553EBF95C /* SCLAlertView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,14 +405,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA8113416720D3AD6091D5E565ECFED0 /* Pods-WalletTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D66D7103808D94D0EEC8FAFAA42D1AC6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90A7F7ECA52C743DDD13830F4975BD6A /* Pods-Wallet-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +419,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0C09E75DE13EE9BB765761DDC24887AE /* Pods-Wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375D301899FD68173B1354BD313053A1 /* Build configuration list for PBXNativeTarget "Pods-Wallet" */;
+			buildPhases = (
+				494AE80BEA5FAD3D07387C3022031417 /* Sources */,
+				4CCAE973C25D1C5E09E1B8EFC1BB33E0 /* Frameworks */,
+				646076D56228D494B8DE6DF31E988917 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDE3FD7B53A4EC9F9728D3F01EE944B1 /* PBXTargetDependency */,
+				DE5E84CC52EEA09EE8725719C54F79F9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Wallet";
+			productName = "Pods-Wallet";
+			productReference = 4AB33155EB513EDD11E7A0E9E955589C /* Pods_Wallet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		0E467647BC888F496528BFD13E9BB2D7 /* Pods-WalletUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B0030BD28F2BB56C820C08989919D1E /* Build configuration list for PBXNativeTarget "Pods-WalletUITests" */;
@@ -305,25 +452,24 @@
 			);
 			name = "Pods-WalletUITests";
 			productName = "Pods-WalletUITests";
-			productReference = FA2A11134CA2C33B017E6B6AF0951002 /* Pods_WalletUITests.framework */;
+			productReference = D7CD8BD53ABE362F9CABF06C11315889 /* Pods_WalletUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		115E8C980EAB118641B9807C80A31962 /* Pods-Wallet */ = {
+		69000F52D4F15D24E698DA1BDD2422AA /* SCLAlertView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC59432A3290B0E5A7056AC9FEA2148D /* Build configuration list for PBXNativeTarget "Pods-Wallet" */;
+			buildConfigurationList = 124704A8AD5C9C7F06FFCE7FB27BA437 /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
 			buildPhases = (
-				A074F5849B83D4152388D40B7801A50C /* Sources */,
-				B055FF78A1FB5F68658BC4C15971E9A0 /* Frameworks */,
-				D66D7103808D94D0EEC8FAFAA42D1AC6 /* Headers */,
+				A5FB518CEF72BD47642C539E733BA635 /* Sources */,
+				930BE908052B01F1D5CDE90778B7EDEE /* Frameworks */,
+				A5529BAFC6419D95D25609737C37998C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				08FBB1FAFCD08351E513732B1598E4F3 /* PBXTargetDependency */,
 			);
-			name = "Pods-Wallet";
-			productName = "Pods-Wallet";
-			productReference = CA83BC26D00BBD26CD2E4F1205A2E5D5 /* Pods_Wallet.framework */;
+			name = SCLAlertView;
+			productName = SCLAlertView;
+			productReference = 2FC03530515EAAC282031EF45F51EA17 /* SCLAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		71D08BFD5D717F7CB47984AC45EFC6A8 /* Pods-WalletTests */ = {
@@ -340,24 +486,24 @@
 			);
 			name = "Pods-WalletTests";
 			productName = "Pods-WalletTests";
-			productReference = 0D3DE901F97C82E75E516A9E635CCE1B /* Pods_WalletTests.framework */;
+			productReference = B029C4588DDC2A93F79A982B255F6824 /* Pods_WalletTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7CBC842EE06306B910D691943B030F03 /* SCLAlertView */ = {
+		9091229326D8C5C3D0072B04E6AD712A /* FoldingTabBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2235DC0C24DCF56A0C3941D6173E9CEA /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildConfigurationList = 3D97E289CA271DF88A0451E24E1D79AA /* Build configuration list for PBXNativeTarget "FoldingTabBar" */;
 			buildPhases = (
-				57C322639068B1EA0B4880F20ECB9EBA /* Sources */,
-				49F7D708DCEE81452487A7D92CB750B4 /* Frameworks */,
-				7D2EC50EF79305DB30B87EC02CA85015 /* Headers */,
+				44F5402FD20D2EC1D0CA83DB63F8D913 /* Sources */,
+				DBE7B57E1B69660C8450CF92896B6D18 /* Frameworks */,
+				6E79AA6A0E978B22FC1EFFCAEAC36D8C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SCLAlertView;
-			productName = SCLAlertView;
-			productReference = 75115CAF52FAA94960A288EFA9DFC4FE /* SCLAlertView.framework */;
+			name = FoldingTabBar;
+			productName = FoldingTabBar;
+			productReference = 0D46E35B7F66D9C9C04D0ADBEF00D38A /* FoldingTabBar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -377,14 +523,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 32A149D41B759A2C33A8527CFCA0738D /* Products */;
+			productRefGroup = 897F247E577B1914313BA9B2588640B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				115E8C980EAB118641B9807C80A31962 /* Pods-Wallet */,
+				9091229326D8C5C3D0072B04E6AD712A /* FoldingTabBar */,
+				0C09E75DE13EE9BB765761DDC24887AE /* Pods-Wallet */,
 				71D08BFD5D717F7CB47984AC45EFC6A8 /* Pods-WalletTests */,
 				0E467647BC888F496528BFD13E9BB2D7 /* Pods-WalletUITests */,
-				7CBC842EE06306B910D691943B030F03 /* SCLAlertView */,
+				69000F52D4F15D24E698DA1BDD2422AA /* SCLAlertView */,
 			);
 		};
 /* End PBXProject section */
@@ -398,22 +545,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57C322639068B1EA0B4880F20ECB9EBA /* Sources */ = {
+		44F5402FD20D2EC1D0CA83DB63F8D913 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				753D0415D8606DD5F33D16A71ACBB57A /* Info.plist in Sources */,
-				78694E89ACA54EB01A474DCAE66F5EFA /* SCLAlertView-dummy.m in Sources */,
-				ADABD883C4D4C1EBC25803B64423FEB5 /* SCLAlertView.swift in Sources */,
-				9CF652E56798495ADE8B5A67CB2B3FA5 /* SCLExtensions.swift in Sources */,
+				28244D4667F4C678ECC77D634EB31E0C /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
+				F3C7280A7188E52AC09439C0EB5AD145 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
+				A6E54C5CEEC9ED0A812145314D6B0EF6 /* FoldingTabBar-dummy.m in Sources */,
+				3072D28EE30F6E59376535CCA84A8F39 /* Info.plist in Sources */,
+				315F73BFB4F71361F9DEE42E941E636F /* YALAnimatingTabBarConstants.m in Sources */,
+				2AE1F9CCD016A74525F97A226E3D4BF2 /* YALCustomHeightTabBar.m in Sources */,
+				F3FE4E494481443548C41A842F9AA54B /* YALFoldingTabBar.m in Sources */,
+				CB7DF43094F9211A40A81D9542025114 /* YALFoldingTabBarController.m in Sources */,
+				9A1ADC5FE608D170E838F8F434947E4E /* YALSpringAnimation.m in Sources */,
+				0C561D60BDE8E17FC817370B9418AB85 /* YALTabBarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A074F5849B83D4152388D40B7801A50C /* Sources */ = {
+		494AE80BEA5FAD3D07387C3022031417 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				858B115064208D275835F5353C30ECC4 /* Pods-Wallet-dummy.m in Sources */,
+				ED49B2BBB45AD76B5D24FCEC12BCEF61 /* Pods-Wallet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5FB518CEF72BD47642C539E733BA635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40066992A00C6882C0E881D89655FB93 /* Info.plist in Sources */,
+				EDBC0E62F73052D0153D18894083750D /* SCLAlertView-dummy.m in Sources */,
+				B79EC8423675FC0F66C241B978200771 /* SCLAlertView.swift in Sources */,
+				F34958CA3D2B771F489D52DEB99A29FB /* SCLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,11 +592,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		08FBB1FAFCD08351E513732B1598E4F3 /* PBXTargetDependency */ = {
+		DDE3FD7B53A4EC9F9728D3F01EE944B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FoldingTabBar;
+			target = 9091229326D8C5C3D0072B04E6AD712A /* FoldingTabBar */;
+			targetProxy = 7A43ED4016FB7900A9F47A2183FF6C33 /* PBXContainerItemProxy */;
+		};
+		DE5E84CC52EEA09EE8725719C54F79F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SCLAlertView;
-			target = 7CBC842EE06306B910D691943B030F03 /* SCLAlertView */;
-			targetProxy = 6F0D16BDD5E546BB64C56AE70058FB7A /* PBXContainerItemProxy */;
+			target = 69000F52D4F15D24E698DA1BDD2422AA /* SCLAlertView */;
+			targetProxy = EE48828C85F6A3B709B6143678A40EF8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -541,6 +711,36 @@
 			};
 			name = Release;
 		};
+		54037137F6415043B9089D04AC6D3668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C831C330163ACB36FAE17030C1A0AD33 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -616,7 +816,7 @@
 			};
 			name = Release;
 		};
-		7FE6829D0788AFFB58A03917B9CE3979 /* Release */ = {
+		AE04EDFD85F56FE32A06FA271B77449A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6A62FDE63E26B5102860F3A4998ACF9 /* Pods-Wallet.release.xcconfig */;
 			buildSettings = {
@@ -649,7 +849,65 @@
 			};
 			name = Release;
 		};
-		B39BFC6F8ECBB7278B6706849F1C9E0B /* Debug */ = {
+		CDDE074D8DC12957D0EAA17C27DCA097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C831C330163ACB36FAE17030C1A0AD33 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8ACD76689A9A7B2B9CC8F3068AD32F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46BCFFC0F8AEE5D9AB32BC88186424A6 /* FoldingTabBar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FoldingTabBar/FoldingTabBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoldingTabBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FoldingTabBar/FoldingTabBar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FoldingTabBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB69B49CC82F07B62A0466EE0313D81B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE0DB5385730EC7B24F9FFB030C34FFA /* Pods-Wallet.debug.xcconfig */;
 			buildSettings = {
@@ -683,38 +941,9 @@
 			};
 			name = Debug;
 		};
-		C306E8308012D383AEC7B79D41AD328C /* Release */ = {
+		EE2D9F70C8DF90ECC547A774FDD8E2CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35591390A87A1DC9301FE7AC8BD615B2 /* SCLAlertView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SCLAlertView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C3BDEF577EA1192261214D26B60A2A94 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35591390A87A1DC9301FE7AC8BD615B2 /* SCLAlertView.xcconfig */;
+			baseConfigurationReference = 46BCFFC0F8AEE5D9AB32BC88186424A6 /* FoldingTabBar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -725,17 +954,16 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FoldingTabBar/FoldingTabBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoldingTabBar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MODULEMAP_FILE = "Target Support Files/FoldingTabBar/FoldingTabBar.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SCLAlertView;
+				PRODUCT_NAME = FoldingTabBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -787,11 +1015,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2235DC0C24DCF56A0C3941D6173E9CEA /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+		124704A8AD5C9C7F06FFCE7FB27BA437 /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3BDEF577EA1192261214D26B60A2A94 /* Debug */,
-				C306E8308012D383AEC7B79D41AD328C /* Release */,
+				54037137F6415043B9089D04AC6D3668 /* Debug */,
+				CDDE074D8DC12957D0EAA17C27DCA097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -805,20 +1033,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		375D301899FD68173B1354BD313053A1 /* Build configuration list for PBXNativeTarget "Pods-Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB69B49CC82F07B62A0466EE0313D81B /* Debug */,
+				AE04EDFD85F56FE32A06FA271B77449A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D97E289CA271DF88A0451E24E1D79AA /* Build configuration list for PBXNativeTarget "FoldingTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2D9F70C8DF90ECC547A774FDD8E2CE /* Debug */,
+				E8ACD76689A9A7B2B9CC8F3068AD32F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		92FBCB642237835B940A6B76F54C0AB7 /* Build configuration list for PBXNativeTarget "Pods-WalletTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F3CD83EFB9CE0699024192A3E717527F /* Debug */,
 				4CAC70519208796CB8F09DE67068FA89 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC59432A3290B0E5A7056AC9FEA2148D /* Build configuration list for PBXNativeTarget "Pods-Wallet" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B39BFC6F8ECBB7278B6706849F1C9E0B /* Debug */,
-				7FE6829D0788AFFB58A03917B9CE3979 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

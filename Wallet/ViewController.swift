@@ -6,9 +6,11 @@
 //  Copyright © 2016 AleMarco. All rights reserved.
 //
 
+
 import CoreData
 import UIKit
 import SCLAlertView
+import FoldingTabBar
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate{
     
@@ -53,7 +55,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let contoCorrente = listaContoCorrente[indexPath.item]
         cell.nomeLabel.text = contoCorrente.nome
         cell.importoLabel.text = String(contoCorrente.importo!)
-        let nomeTipoConto = contoCorrente.tipoConto!.nome
+        let nomeTipoConto = contoCorrente.tipoConto?.nome
         print(nomeTipoConto)
         
         return cell

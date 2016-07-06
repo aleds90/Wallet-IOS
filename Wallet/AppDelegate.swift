@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import FoldingTabBar
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         preloadData()
+        setupToolbar()
         return true
     }
 
@@ -136,6 +138,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Could not fetch \(error), \(error.userInfo)")
         }
 
+    }
+    
+    func setupToolbar(){
+        if let tabBarController = window?.rootViewController as? YALFoldingTabBarController {
+            //leftBarItems
+            let firstItem = YALTabBarItem(
+                itemImage: UIImage(named: "ic_event_note_white")!,
+                leftItemImage: nil,
+                rightItemImage: nil
+            )
+            let secondItem = YALTabBarItem(
+                itemImage: UIImage(named: "ic_trending_up_white")!,
+                leftItemImage: nil,
+                rightItemImage: nil
+            )
+            tabBarController.leftBarItems = [firstItem, secondItem]
+            //rightBarItems
+            
+            let thirdItem = YALTabBarItem(
+                itemImage: UIImage(named: "ic_golf_course_white")!,
+                leftItemImage: nil,
+                rightItemImage: nil
+            )
+    
+            let forthItem = YALTabBarItem(
+                itemImage: UIImage(named: "settings_icon")!,
+                leftItemImage: nil,
+                rightItemImage: nil
+            )
+    
+            tabBarController.rightBarItems = [thirdItem, forthItem]
+            
+            tabBarController.tabBarView.tabBarColor = UIColor(
+                red: 72.0/255.0,
+                green: 211.0/255.0,
+                blue: 178.0/255.0,
+                alpha: 1
+            )
+            tabBarController.centerButtonImage = UIImage(named: "ic_add_white")
+            
+            tabBarController.tabBarView.dotColor = UIColor(
+                red: 94.0/255.0,
+                green: 91.0/255.0,
+                blue: 149.0/255.0,
+                alpha: 1
+            )
+            
+        }
     }
 }
 

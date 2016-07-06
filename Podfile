@@ -7,7 +7,7 @@ target 'Wallet' do
 
   # Pods for Wallet
 	pod 'SCLAlertView'
-
+	pod 'FoldingTabBar', '~> 1.0.3'
   target 'WalletTests' do
     inherit! :search_paths
     # Pods for testing
