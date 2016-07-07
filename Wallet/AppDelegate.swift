@@ -17,7 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        preloadData()
+        createParam()
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if (!defaults.boolForKey("firstLogin")) {
+            preloadData()
+        }
         setupToolbar()
         return true
     }
@@ -108,9 +112,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-    
+    func createParam() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+            if (defaults.boolForKey("firstLogin") as Bool?) != nil{
+            
+            }else{
+                defaults.setBool(false, forKey: "firstLogin")
+            }
+    }
+    func checkFirstLogin() ->Bool{
+        let defaults = NSUserDefaults.standardUserDefaults()
+        return defaults.boolForKey("firstLogin")
+    }
     func preloadData() {
-        removeData()
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setBool(true, forKey: "firstLogin")
+
         let listaTipoConto: [String] = ["Conto Bancario", "Conto Paypal", "Conto MoneyBookers", "Conto Neteller", "Altro..."]
         for item in listaTipoConto {
             TipoConto.createInManagedObjectContext(managedObjectContext, nome: item)
