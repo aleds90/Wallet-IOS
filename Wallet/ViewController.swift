@@ -10,8 +10,9 @@
 import CoreData
 import UIKit
 import SCLAlertView
+import FoldingTabBar
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate{
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate, YALTabBarDelegate{
     
     //MARKS: Properties
     @IBOutlet weak var tableView: UITableView!
@@ -54,9 +55,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let contoCorrente = listaContoCorrente[indexPath.item]
         cell.nomeLabel.text = contoCorrente.nome
         cell.importoLabel.text = String(contoCorrente.importo!)
-        let nomeTipoConto = contoCorrente.tipoConto?.nome
-        print(nomeTipoConto)
-        
         return cell
     }
     
@@ -105,6 +103,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         tipoContoSelected = listaTipoConto[row]
+    }
+    //MARKS: Override YALTabBarDelegate
+    func tabBarWillCollapse(tabBar: YALFoldingTabBar!){
+    }
+    func tabBarWillExpand(tabBar: YALFoldingTabBar!){
+    }
+    func tabBarDidCollapse(tabBar: YALFoldingTabBar!){
+    }
+    func tabBarDidExpand(tabBar: YALFoldingTabBar!){
+    }
+    
+    func tabBar(tabBar: YALFoldingTabBar!, didSelectItemAtIndex index: UInt){
+        if (index == 1) {
+            print("Selected 1")
+        }else if(index == 2){
+            print("Selected 2")
+        }else if(index == 3){
+            print("Selected 3")
+        }
     }
     
     //MARKS: Fuctions
@@ -162,8 +179,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alert.customSubview = subview
         
         alert.addButton("Annulla"){
-            print("annulla")
-
         }
         alert.addButton("Conferma") {
             if(textfield1.text != "" && textfield2.text != ""){
@@ -191,7 +206,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         listaContoCorrente.append(item)
                     }
                 }else {
-                    print("list is empty")
                 }
             }
         } catch let error as NSError {
