@@ -120,10 +120,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 defaults.setBool(false, forKey: "firstLogin")
             }
     }
-    func checkFirstLogin() ->Bool{
-        let defaults = NSUserDefaults.standardUserDefaults()
-        return defaults.boolForKey("firstLogin")
-    }
+  
     func preloadData() {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setBool(true, forKey: "firstLogin")
