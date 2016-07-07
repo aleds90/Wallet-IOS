@@ -6,7 +6,6 @@
 //  Copyright © 2016 AleMarco. All rights reserved.
 //
 
-
 import CoreData
 import UIKit
 import SCLAlertView
@@ -36,7 +35,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -107,12 +105,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //MARKS: Override YALTabBarDelegate
     
     func tabBarWillCollapse(tabBar: YALFoldingTabBar!){
+        
     }
     func tabBarWillExpand(tabBar: YALFoldingTabBar!){
+    
     }
     func tabBarDidCollapse(tabBar: YALFoldingTabBar!){
+    
     }
     func tabBarDidExpand(tabBar: YALFoldingTabBar!){
+    
     }
     
     //MARKS: Fuctions
@@ -130,7 +132,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Initialize SCLAlertView using custom Appearance
         let alert = SCLAlertView(appearance: appearance)
         
-        // Creat the subview
+        // Create the subview
         let subview = UIView(frame: CGRectMake(0,0,216,205))
         let x = (subview.frame.width - 180) / 2
         
