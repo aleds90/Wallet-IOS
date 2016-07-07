@@ -105,6 +105,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tipoContoSelected = listaTipoConto[row]
     }
     //MARKS: Override YALTabBarDelegate
+    
     func tabBarWillCollapse(tabBar: YALFoldingTabBar!){
     }
     func tabBarWillExpand(tabBar: YALFoldingTabBar!){
@@ -112,16 +113,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tabBarDidCollapse(tabBar: YALFoldingTabBar!){
     }
     func tabBarDidExpand(tabBar: YALFoldingTabBar!){
-    }
-    
-    func tabBar(tabBar: YALFoldingTabBar!, didSelectItemAtIndex index: UInt){
-        if (index == 1) {
-            print("Selected 1")
-        }else if(index == 2){
-            print("Selected 2")
-        }else if(index == 3){
-            print("Selected 3")
-        }
     }
     
     //MARKS: Fuctions

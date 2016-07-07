@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="2211" y="1257"/>
         </scene>
-        <!--View Controller-->
+        <!--Statistics Controller-->
         <scene sceneID="HQ0-ZW-QeV">
             <objects>
-                <viewController id="aw4-hU-TNh" sceneMemberID="viewController">
+                <viewController id="aw4-hU-TNh" customClass="StatisticsController" customModule="Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Maj-bf-7BA"/>
                         <viewControllerLayoutGuide type="bottom" id="uhp-DQ-Fyv"/>
@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="2211" y="2037"/>
         </scene>
-        <!--View Controller-->
+        <!--Goals Controller-->
         <scene sceneID="5dX-V6-N0f">
             <objects>
-                <viewController id="koN-gS-UJp" sceneMemberID="viewController">
+                <viewController id="koN-gS-UJp" customClass="GoalsController" customModule="Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DL5-vE-f6z"/>
                         <viewControllerLayoutGuide type="bottom" id="qTK-WF-xru"/>
@@ -168,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="3009" y="2859"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings Controller-->
         <scene sceneID="tnx-sw-qIF">
             <objects>
-                <viewController id="2aO-dW-q2P" sceneMemberID="viewController">
+                <viewController id="2aO-dW-q2P" customClass="SettingsController" customModule="Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CMY-mC-5gh"/>
                         <viewControllerLayoutGuide type="bottom" id="EhW-iY-jRQ"/>

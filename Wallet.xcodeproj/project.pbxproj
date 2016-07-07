@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0CC6E21D2E947C007B32CE /* StatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0CC6E11D2E947C007B32CE /* StatisticsController.swift */; };
+		0E0CC6E41D2E94AA007B32CE /* GoalsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0CC6E31D2E94AA007B32CE /* GoalsController.swift */; };
+		0E0CC6E61D2E94E3007B32CE /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0CC6E51D2E94E3007B32CE /* SettingsController.swift */; };
 		0E1D30B01D2BE30E00CB3125 /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D30AF1D2BE30E00CB3125 /* CellViewController.swift */; };
 		0E1D30B21D2BE9F200CB3125 /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1D30B11D2BE9F200CB3125 /* SCLAlertView.framework */; };
 		0E91F3271D2D22A100AC114E /* FoldingTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E91F3261D2D22A100AC114E /* FoldingTabBar.framework */; };
@@ -50,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E0CC6E11D2E947C007B32CE /* StatisticsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsController.swift; sourceTree = "<group>"; };
+		0E0CC6E31D2E94AA007B32CE /* GoalsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsController.swift; sourceTree = "<group>"; };
+		0E0CC6E51D2E94E3007B32CE /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		0E1D30AF1D2BE30E00CB3125 /* CellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
 		0E1D30B11D2BE9F200CB3125 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../../Library/Developer/Xcode/DerivedData/Wallet-aodwwwvpcwebuwhkfgyyiswsfyrd/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework"; sourceTree = "<group>"; };
 		0E91F3261D2D22A100AC114E /* FoldingTabBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FoldingTabBar.framework; path = "../../../Library/Developer/Xcode/DerivedData/Wallet-aodwwwvpcwebuwhkfgyyiswsfyrd/Build/Products/Debug-iphonesimulator/FoldingTabBar/FoldingTabBar.framework"; sourceTree = "<group>"; };
@@ -138,6 +144,9 @@
 			children = (
 				0E1D30AF1D2BE30E00CB3125 /* CellViewController.swift */,
 				0EA479761D2AB85E000C7153 /* ViewController.swift */,
+				0E0CC6E11D2E947C007B32CE /* StatisticsController.swift */,
+				0E0CC6E31D2E94AA007B32CE /* GoalsController.swift */,
+				0E0CC6E51D2E94E3007B32CE /* SettingsController.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -488,12 +497,15 @@
 				0EA479E91D2ABE50000C7153 /* TipoConto+CoreDataProperties.swift in Sources */,
 				0EA479EA1D2ABE50000C7153 /* TipoConto.swift in Sources */,
 				0EA479E71D2ABE50000C7153 /* ContoCorrente+CoreDataProperties.swift in Sources */,
+				0E0CC6E21D2E947C007B32CE /* StatisticsController.swift in Sources */,
 				0EA4797D1D2AB85E000C7153 /* Wallet.xcdatamodeld in Sources */,
 				0EA479EE1D2ABE50000C7153 /* Causale.swift in Sources */,
 				0EA479771D2AB85E000C7153 /* ViewController.swift in Sources */,
 				0EA479E41D2ABE50000C7153 /* MovimentoCartaCredito.swift in Sources */,
+				0E0CC6E41D2E94AA007B32CE /* GoalsController.swift in Sources */,
 				0EA479E61D2ABE50000C7153 /* CartaCredito.swift in Sources */,
 				0EA479751D2AB85E000C7153 /* AppDelegate.swift in Sources */,
+				0E0CC6E61D2E94E3007B32CE /* SettingsController.swift in Sources */,
 				0EA479E31D2ABE50000C7153 /* MovimentoCartaCredito+CoreDataProperties.swift in Sources */,
 				0EA479EC1D2ABE50000C7153 /* MovimentoContoCorrente.swift in Sources */,
 				0EA479E81D2ABE50000C7153 /* ContoCorrente.swift in Sources */,
