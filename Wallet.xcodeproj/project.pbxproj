@@ -159,8 +159,8 @@
 				0E1D30AF1D2BE30E00CB3125 /* CellViewController.swift */,
 				0EA479761D2AB85E000C7153 /* ViewController.swift */,
 				0E0CC6E11D2E947C007B32CE /* StatisticsController.swift */,
-				0E0CC6E31D2E94AA007B32CE /* GoalsController.swift */,
 				0E0CC6E51D2E94E3007B32CE /* SettingsController.swift */,
+				0E0CC6E31D2E94AA007B32CE /* GoalsController.swift */,
 				0E0BB8D01D2FB489003AEA76 /* Statistics2Controller.swift */,
 			);
 			name = view;

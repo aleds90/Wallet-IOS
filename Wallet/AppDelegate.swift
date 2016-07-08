@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             preloadData()
         }
         setupToolbar()
+        setupNavigationBar()
+    
         return true
     }
 
@@ -152,6 +154,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Could not fetch \(error), \(error.userInfo)")
         }
 
+    }
+    
+    func setupNavigationBar(){
+        UINavigationBar.appearance().barTintColor = UIColor(
+            red: 72.0/255.0,
+            green: 211.0/255.0,
+            blue: 178.0/255.0,
+            alpha: 1
+        )
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        
     }
     
     func setupToolbar(){

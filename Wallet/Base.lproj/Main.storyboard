@@ -113,13 +113,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6E-mh-qLH" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="45" width="600" height="442"/>
+                                <rect key="frame" x="0.0" y="125" width="600" height="362"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="2mo-cD-yQ4" secondAttribute="trailing" constant="-20" id="24H-Dx-Oya"/>
+                            <constraint firstItem="e6E-mh-qLH" firstAttribute="top" secondItem="2mo-cD-yQ4" secondAttribute="bottom" constant="80" id="DiG-n3-RTx"/>
                             <constraint firstItem="e6E-mh-qLH" firstAttribute="top" secondItem="ksf-KE-XgU" secondAttribute="bottom" constant="45" id="Jgc-fO-hMq"/>
                             <constraint firstItem="e6E-mh-qLH" firstAttribute="leading" secondItem="vyu-9U-Pz0" secondAttribute="leadingMargin" constant="-20" id="KUr-SD-VbE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e6E-mh-qLH" secondAttribute="trailing" constant="20" id="MAa-3X-Hke"/>
@@ -136,9 +137,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Jgc-fO-hMq"/>
                                 <exclude reference="KUr-SD-VbE"/>
                                 <exclude reference="MAa-3X-Hke"/>
                                 <exclude reference="XuN-Wl-2lG"/>
+                                <exclude reference="aYa-Vw-U5T"/>
                                 <exclude reference="kRY-iq-R2e"/>
                                 <exclude reference="pUg-8T-fmV"/>
                                 <exclude reference="rQG-cw-8gA"/>
