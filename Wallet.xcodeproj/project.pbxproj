@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E0BB8CF1D2F9D94003AEA76 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0BB8CE1D2F9D94003AEA76 /* Charts.framework */; };
+		0E0BB8D11D2FB489003AEA76 /* Statistics2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BB8D01D2FB489003AEA76 /* Statistics2Controller.swift */; };
 		0E0CC6E21D2E947C007B32CE /* StatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0CC6E11D2E947C007B32CE /* StatisticsController.swift */; };
 		0E0CC6E41D2E94AA007B32CE /* GoalsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0CC6E31D2E94AA007B32CE /* GoalsController.swift */; };
 		0E0CC6E61D2E94E3007B32CE /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0CC6E51D2E94E3007B32CE /* SettingsController.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		0E0BB8CE1D2F9D94003AEA76 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../../Library/Developer/Xcode/DerivedData/Wallet-aodwwwvpcwebuwhkfgyyiswsfyrd/Build/Products/Debug-iphonesimulator/Charts/Charts.framework"; sourceTree = "<group>"; };
+		0E0BB8D01D2FB489003AEA76 /* Statistics2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics2Controller.swift; sourceTree = "<group>"; };
 		0E0CC6E11D2E947C007B32CE /* StatisticsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsController.swift; sourceTree = "<group>"; };
 		0E0CC6E31D2E94AA007B32CE /* GoalsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsController.swift; sourceTree = "<group>"; };
 		0E0CC6E51D2E94E3007B32CE /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				0E0CC6E11D2E947C007B32CE /* StatisticsController.swift */,
 				0E0CC6E31D2E94AA007B32CE /* GoalsController.swift */,
 				0E0CC6E51D2E94E3007B32CE /* SettingsController.swift */,
+				0E0BB8D01D2FB489003AEA76 /* Statistics2Controller.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				0EA479EB1D2ABE50000C7153 /* MovimentoContoCorrente+CoreDataProperties.swift in Sources */,
 				0EA479E51D2ABE50000C7153 /* CartaCredito+CoreDataProperties.swift in Sources */,
 				0E1D30B01D2BE30E00CB3125 /* CellViewController.swift in Sources */,
+				0E0BB8D11D2FB489003AEA76 /* Statistics2Controller.swift in Sources */,
 				0EA479ED1D2ABE50000C7153 /* Causale+CoreDataProperties.swift in Sources */,
 				0EA479E91D2ABE50000C7153 /* TipoConto+CoreDataProperties.swift in Sources */,
 				0EA479EA1D2ABE50000C7153 /* TipoConto.swift in Sources */,

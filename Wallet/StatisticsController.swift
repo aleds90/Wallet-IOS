@@ -9,15 +9,19 @@
 import UIKit
 import Charts
 
-class StatisticsController: UIViewController, ChartViewDelegate {
+class StatisticsController: UIViewController, ChartViewDelegate, UISearchBarDelegate {
     
     var months: [String]!
-    @IBOutlet var barChartView: BarChartView!
+  
+    @IBOutlet weak var barChartView: BarChartView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Statistics"
         
+        searchBar.delegate = self
+        searchBar.scopeButtonTitles = ["All", "Chocolate", "Hard", "Other"]
         barChartView.delegate = self
         
         months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -30,7 +34,7 @@ class StatisticsController: UIViewController, ChartViewDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    //MARKS: Functions
+    //MARKS: Functions Charts
 
     func setChart(dataPoints: [String], values: [Double]) {
         barChartView.noDataText = "You need to provide data for the chart."
@@ -57,8 +61,16 @@ class StatisticsController: UIViewController, ChartViewDelegate {
         
     }
     
+  
+    
     func chartValueSelected(chartView: ChartViewBase, entry: ChartDataEntry, dataSetIndex: Int, highlight: ChartHighlight) {
         print("\(entry.value) in \(months[entry.xIndex])")
     }
+    
+    //MARKS: Functions SearchBar
+    
+    
+    
+    
 
 }
