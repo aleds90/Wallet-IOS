@@ -1,15 +1,20 @@
 PODS:
+  - Charts (2.2.5):
+    - Charts/Core (= 2.2.5)
+  - Charts/Core (2.2.5)
   - FoldingTabBar (1.0.4)
   - SCLAlertView (0.5.9)
 
 DEPENDENCIES:
+  - Charts
   - FoldingTabBar (~> 1.0.3)
   - SCLAlertView
 
 SPEC CHECKSUMS:
+  Charts: b48fcc8d7190de910ff9e9748f5360c8ea7856e5
   FoldingTabBar: 0b099ae881bb5e009eb5f893aba2d6d8d8a066a2
   SCLAlertView: d7c6a48c7d340e60206d4ed0e8ebcbff3b9d2a44
 
-PODFILE CHECKSUM: 466535f82a12557e3d05bd72c25b365d50f42a19
+PODFILE CHECKSUM: ccabb1e1f6d2d24e196af3087bdff153b277aab3
 
 COCOAPODS: 1.0.1
