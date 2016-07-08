@@ -7,30 +7,58 @@
 //
 
 import UIKit
+import Charts
 
-class StatisticsController: UIViewController {
-
+class StatisticsController: UIViewController, ChartViewDelegate {
+    
+    var months: [String]!
+    @IBOutlet var barChartView: BarChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Statistics"
-
-        // Do any additional setup after loading the view.
+        
+        barChartView.delegate = self
+        
+        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
+        
+        setChart(months, values: unitsSold)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    //MARKS: Functions
 
-    /*
-    // MARK: - Navigation
+    func setChart(dataPoints: [String], values: [Double]) {
+        barChartView.noDataText = "You need to provide data for the chart."
+        barChartView.descriptionText = ""
+        
+        var dataEntries: [BarChartDataEntry] = []
+        
+        for i in 0..<dataPoints.count {
+            let dataEntry = BarChartDataEntry(value: values[i], xIndex: i)
+            dataEntries.append(dataEntry)
+        }
+        
+        let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "Units Sold")
+        let chartData = BarChartData(xVals: months, dataSet: chartDataSet)
+        barChartView.data = chartData
+        // Customizing the Chart
+        barChartView.backgroundColor = UIColor(red: 189/255, green: 195/255, blue: 199/255, alpha: 1)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        chartDataSet.colors = ChartColorTemplates.liberty()
+        barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+        
+        let limit = ChartLimitLine(limit: 10.0, label: "Target")
+        barChartView.rightAxis.addLimitLine(limit)
+        
     }
-    */
+    
+    func chartValueSelected(chartView: ChartViewBase, entry: ChartDataEntry, dataSetIndex: Int, highlight: ChartHighlight) {
+        print("\(entry.value) in \(months[entry.xIndex])")
+    }
 
 }

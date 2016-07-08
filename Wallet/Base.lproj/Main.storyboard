@@ -100,23 +100,19 @@
             <objects>
                 <viewController id="aw4-hU-TNh" customClass="StatisticsController" customModule="Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Maj-bf-7BA"/>
-                        <viewControllerLayoutGuide type="bottom" id="uhp-DQ-Fyv"/>
+                        <viewControllerLayoutGuide type="top" id="Ufu-Bf-aa1"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3k-Ux-nyq"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="iZ7-8B-Ir2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AREA STATISTICHE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieu-fB-j81">
-                                <rect key="frame" x="20" y="92" width="150" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
+                    <view key="view" contentMode="scaleToFill" id="2uT-oS-8a7" customClass="BarChartView" customModule="Charts">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="GxZ-hZ-zWr"/>
+                    <connections>
+                        <outlet property="barChartView" destination="2uT-oS-8a7" id="ptD-Gs-yri"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWU-ZN-1sL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
