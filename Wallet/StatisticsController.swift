@@ -25,7 +25,7 @@ class StatisticsController: UIViewController, ChartViewDelegate, UISearchBarDele
         barChartView.delegate = self
         
         months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
+        let unitsSold = [120.0, 140.0, 160.0, 30.0, -112.0, 160.0, -40.0, 180.0, 200.0, -54.0, -45.0, -14.0]
         
         setChart(months, values: unitsSold)
     }
@@ -56,12 +56,10 @@ class StatisticsController: UIViewController, ChartViewDelegate, UISearchBarDele
         chartDataSet.colors = ChartColorTemplates.liberty()
         barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
         
-        let limit = ChartLimitLine(limit: 10.0, label: "Target")
+        let limit = ChartLimitLine(limit: 100.0, label: "Obiettivo Mensile")
         barChartView.rightAxis.addLimitLine(limit)
         
     }
-    
-  
     
     func chartValueSelected(chartView: ChartViewBase, entry: ChartDataEntry, dataSetIndex: Int, highlight: ChartHighlight) {
         print("\(entry.value) in \(months[entry.xIndex])")

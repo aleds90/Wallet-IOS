@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //MARKS: Properties
     @IBOutlet weak var tableView: UITableView!
     
+    var rowForSegue = 0
+    
     var tipoContoSelected = "Conto Bancario"
     var listaTipoConto: [String] = ["Conto Bancario", "Conto Paypal", "Conto MoneyBookers", "Conto Neteller", "Altro..."]
     var listaContoCorrente = [ContoCorrente]()
@@ -29,9 +31,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(ViewController.launchAlert))
         
         // Set the title of the view
-        title = "I tuoi conti"
+        title = "Conti e Carte"
         // Populate listaContoCorrente
         getContoCorrenteFromCoreData()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "Detail") {
+            let destinationVC:DetailViewController = segue.destinationViewController as! DetailViewController
+            destinationVC.contoDetail = listaContoCorrente[rowForSegue]
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,6 +82,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        rowForSegue = indexPath.row
+        
+        return indexPath
+    }
     //MARKS: Override UIPickerViewDataSource
     
     func numberOfComponentsInPickerView(_: UIPickerView) -> Int {

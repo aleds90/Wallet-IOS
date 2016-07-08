@@ -39,6 +39,7 @@
                                 <connections>
                                     <outlet property="importoLabel" destination="dQp-JG-rLE" id="DNv-C4-nhr"/>
                                     <outlet property="nomeLabel" destination="May-QR-zcc" id="udh-pr-GIa"/>
+                                    <segue destination="rAh-40-DQz" kind="show" identifier="Detail" id="gn9-06-sim"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -109,25 +110,26 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2mo-cD-yQ4">
-                                <rect key="frame" x="0.0" y="1" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6E-mh-qLH" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="125" width="600" height="362"/>
+                                <rect key="frame" x="0.0" y="44" width="600" height="443"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="2mo-cD-yQ4" secondAttribute="trailing" constant="-20" id="24H-Dx-Oya"/>
-                            <constraint firstItem="e6E-mh-qLH" firstAttribute="top" secondItem="2mo-cD-yQ4" secondAttribute="bottom" constant="80" id="DiG-n3-RTx"/>
                             <constraint firstItem="e6E-mh-qLH" firstAttribute="top" secondItem="ksf-KE-XgU" secondAttribute="bottom" constant="45" id="Jgc-fO-hMq"/>
                             <constraint firstItem="e6E-mh-qLH" firstAttribute="leading" secondItem="vyu-9U-Pz0" secondAttribute="leadingMargin" constant="-20" id="KUr-SD-VbE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e6E-mh-qLH" secondAttribute="trailing" constant="20" id="MAa-3X-Hke"/>
                             <constraint firstItem="e6E-mh-qLH" firstAttribute="leading" secondItem="vyu-9U-Pz0" secondAttribute="leadingMargin" constant="-20" id="ObQ-0C-cAS"/>
                             <constraint firstItem="2mo-cD-yQ4" firstAttribute="leading" secondItem="vyu-9U-Pz0" secondAttribute="leadingMargin" constant="-20" id="UNt-jS-2mE"/>
+                            <constraint firstItem="e6E-mh-qLH" firstAttribute="top" secondItem="2mo-cD-yQ4" secondAttribute="bottom" id="WR2-Gq-fts"/>
                             <constraint firstItem="e6E-mh-qLH" firstAttribute="leading" secondItem="vyu-9U-Pz0" secondAttribute="leadingMargin" id="XuN-Wl-2lG"/>
                             <constraint firstItem="e6E-mh-qLH" firstAttribute="top" secondItem="2mo-cD-yQ4" secondAttribute="bottom" id="aYa-Vw-U5T"/>
+                            <constraint firstItem="2mo-cD-yQ4" firstAttribute="top" secondItem="ksf-KE-XgU" secondAttribute="bottom" id="jv2-2q-1oW"/>
                             <constraint firstItem="e6E-mh-qLH" firstAttribute="leading" secondItem="vyu-9U-Pz0" secondAttribute="leadingMargin" constant="-20" id="kRY-iq-R2e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e6E-mh-qLH" secondAttribute="trailing" constant="-20" id="l6R-XN-jdz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e6E-mh-qLH" secondAttribute="trailing" id="pUg-8T-fmV"/>
@@ -137,6 +139,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="uXC-ba-tdV"/>
                                 <exclude reference="Jgc-fO-hMq"/>
                                 <exclude reference="KUr-SD-VbE"/>
                                 <exclude reference="MAa-3X-Hke"/>
@@ -173,6 +176,34 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="3009" y="2037"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="FQ0-8f-nfL">
+            <objects>
+                <viewController id="rAh-40-DQz" customClass="DetailViewController" customModule="Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H4y-Ig-2Og"/>
+                        <viewControllerLayoutGuide type="bottom" id="7TP-lC-K6b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tg5-nh-cCj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AREA DETTAGLIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXR-iN-PXF">
+                                <rect key="frame" x="20" y="85" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2F-y6-a4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3819" y="1257"/>
         </scene>
         <!--Statistics2 Controller-->
         <scene sceneID="LXp-VD-1uj">
