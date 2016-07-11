@@ -25,6 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupToolbar()
         setupNavigationBar()
     
+        let pageControl = UIPageControl.appearance()
+        pageControl.pageIndicatorTintColor = UIColor.grayColor()
+        pageControl.currentPageIndicatorTintColor = UIColor.redColor()
+        pageControl.backgroundColor = UIColor.darkGrayColor()
+
         return true
     }
 
