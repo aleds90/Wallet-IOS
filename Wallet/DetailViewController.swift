@@ -11,14 +11,13 @@ import UIKit
 class DetailViewController: UIViewController {
     
     var contoDetail: ContoCorrente? = nil
-
+    var nome: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Dettaglio"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(ViewController.launchAlert))
-        
-        print(contoDetail?.nome)
         // Do any additional setup after loading the view.
     }
 

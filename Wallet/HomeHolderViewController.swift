@@ -13,6 +13,8 @@ class HomeHolderViewController: UIViewController {
     @IBOutlet weak var myImageView: UIImageView!
     var imageFileName: String!
     var pageIndex: Int!
+    var nome: String!
+    @IBOutlet weak var nomeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,7 @@ class HomeHolderViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(HomeHolderViewController.imageTapped(_:)))
         myImageView.userInteractionEnabled = true
         myImageView.addGestureRecognizer(tapGestureRecognizer)
+        nomeLabel.text = nome
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,8 +43,8 @@ class HomeHolderViewController: UIViewController {
      */
     func imageTapped(img: AnyObject)
     {
-        print(imageFileName)
         let nextView = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as? DetailViewController
+        nextView?.nome = nome
         self.navigationController?.pushViewController(nextView!, animated: true)
         
         
