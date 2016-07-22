@@ -107,6 +107,7 @@ class HomeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         pageContentViewController.imageFileName = "amex"
         pageContentViewController.pageIndex = index
         pageContentViewController.nome = listaContoCorrente[index].nome
+        pageContentViewController.contoCorrente = listaContoCorrente[index]
         return pageContentViewController
     }
     

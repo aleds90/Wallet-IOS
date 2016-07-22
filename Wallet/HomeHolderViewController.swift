@@ -14,6 +14,8 @@ class HomeHolderViewController: UIViewController {
     var imageFileName: String!
     var pageIndex: Int!
     var nome: String!
+    var contoCorrente: ContoCorrente!
+    
     @IBOutlet weak var nomeLabel: UILabel!
     
     override func viewDidLoad() {
@@ -45,6 +47,7 @@ class HomeHolderViewController: UIViewController {
     {
         let nextView = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as? DetailViewController
         nextView?.nome = nome
+        nextView?.contoDetail = contoCorrente
         self.navigationController?.pushViewController(nextView!, animated: true)
         
         

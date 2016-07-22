@@ -10,8 +10,12 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var contoDetail: ContoCorrente? = nil
+    var contoDetail: ContoCorrente!
     var nome: String!
+    
+    @IBOutlet weak var nomeContoLabel: UILabel!
+    @IBOutlet weak var importoContoLabel: UILabel!
+    @IBOutlet weak var nomeTipoContoLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +23,10 @@ class DetailViewController: UIViewController {
         title = "Dettaglio"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(ViewController.launchAlert))
         // Do any additional setup after loading the view.
+        nomeContoLabel.text = contoDetail.nome!
+        importoContoLabel.text = String(contoDetail.importo!)
+        nomeTipoContoLabel.text = contoDetail.tipoConto?.nome
+        
     }
 
     override func didReceiveMemoryWarning() {
