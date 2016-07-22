@@ -11,7 +11,6 @@ import CoreData
 import SCLAlertView
 
 class HomeViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
-
     
     var pageImages:NSArray!
     var pageViewController: UIPageViewController!
@@ -24,7 +23,12 @@ class HomeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     override func viewDidLoad() {
         super.viewDidLoad()
         getContoCorrenteFromCoreData()
-
+        if (listaContoCorrente.count == 1) {
+            let tipoConto = self.getTipoContoByName(self.tipoContoSelected)
+            ContoCorrente.createInManagedObjectContext(self.managedObjectContext, nome: "test", importo: 0, tipoconto: tipoConto!)
+        }
+     
+        
         pageImages = NSArray(objects: "amex", "discover", "masterCard", "paypal", "visa")
         
         
@@ -38,10 +42,14 @@ class HomeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)
         self.pageViewController.didMoveToParentViewController(self)
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(ViewController.launchAlert))
+        
         self.title = "Conti & Carte"
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

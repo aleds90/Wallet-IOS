@@ -136,7 +136,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         for item in listaTipoConto {
             TipoConto.createInManagedObjectContext(managedObjectContext, nome: item)
         }
+        
+        let listaCausali: [String] = [ "Carburante", "Spesa", "Prelievi", "Shopping", "Ristoranti"]
+        for item in listaCausali{
+            Causale.createInManagedObjectContext(managedObjectContext, nome: item)
+        }
     }
+    
+    
     
     func removeData(){
         let fetchRequest = NSFetchRequest(entityName: "TipoConto")

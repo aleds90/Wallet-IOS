@@ -38,6 +38,7 @@
 		0EA479EC1D2ABE50000C7153 /* MovimentoContoCorrente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479E01D2ABE50000C7153 /* MovimentoContoCorrente.swift */; };
 		0EA479ED1D2ABE50000C7153 /* Causale+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479E11D2ABE50000C7153 /* Causale+CoreDataProperties.swift */; };
 		0EA479EE1D2ABE50000C7153 /* Causale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA479E21D2ABE50000C7153 /* Causale.swift */; };
+		0EEC37961D4264BA00B829E8 /* CellDeatilViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC37951D4264BA00B829E8 /* CellDeatilViewCell.swift */; };
 		2CC404728AF1889139CEF18C /* Pods_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21110C071D229E8CA04732D0 /* Pods_Wallet.framework */; };
 		59BF477519E5723FDD7A544E /* Pods_WalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63EFFFC449F2BEAE1BE2143 /* Pods_WalletTests.framework */; };
 		F91311F969C0CE5B51F4B0EB /* Pods_WalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D951750D8857986C3DC3E1F3 /* Pods_WalletUITests.framework */; };
@@ -98,6 +99,7 @@
 		0EA479E01D2ABE50000C7153 /* MovimentoContoCorrente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovimentoContoCorrente.swift; sourceTree = "<group>"; };
 		0EA479E11D2ABE50000C7153 /* Causale+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Causale+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0EA479E21D2ABE50000C7153 /* Causale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Causale.swift; sourceTree = "<group>"; };
+		0EEC37951D4264BA00B829E8 /* CellDeatilViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDeatilViewCell.swift; sourceTree = "<group>"; };
 		21110C071D229E8CA04732D0 /* Pods_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		447E4C269AEA145A3A9A0F66 /* Pods-WalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletUITests/Pods-WalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		54616C2868B9318ED85040E3 /* Pods-WalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletUITests/Pods-WalletUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				0E0BB8D21D2FD23A003AEA76 /* DetailViewController.swift */,
 				0E8DF4F41D33EBA400EA533C /* HomeViewController.swift */,
 				0E8DF4F61D33EBE100EA533C /* HomeHolderViewController.swift */,
+				0EEC37951D4264BA00B829E8 /* CellDeatilViewCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EA479EB1D2ABE50000C7153 /* MovimentoContoCorrente+CoreDataProperties.swift in Sources */,
+				0EEC37961D4264BA00B829E8 /* CellDeatilViewCell.swift in Sources */,
 				0EA479E51D2ABE50000C7153 /* CartaCredito+CoreDataProperties.swift in Sources */,
 				0E1D30B01D2BE30E00CB3125 /* CellViewController.swift in Sources */,
 				0E0BB8D11D2FB489003AEA76 /* Statistics2Controller.swift in Sources */,
