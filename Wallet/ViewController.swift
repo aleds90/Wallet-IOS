@@ -33,6 +33,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         title = "Conti e Carte"
         // Populate listaContoCorrente
         getContoCorrenteFromCoreData()
+        
+        //prova Marco
+        let carta:CartaCredito = CartaCredito()
+        
+        carta.nome = "marco"
+        //fine prova Marco
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

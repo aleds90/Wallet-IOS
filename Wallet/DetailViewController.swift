@@ -1,3 +1,4 @@
+
 //
 //  DetailViewController.swift
 //  Wallet
@@ -6,12 +7,13 @@
 //  Copyright © 2016 AleMarco. All rights reserved.
 //
 import CoreData
-import SCLAlertView
 import UIKit
+import SCLAlertView
 
 class DetailViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITableViewDelegate, UITableViewDataSource {
     
-    var contoDetail: ContoCorrente!
+    var wallet: Wallet!
+    var contoDetail: ContoCorrente?
     var nome: String!
     var listaTipoConto: [String] = ["Conto Bancario", "Conto Paypal", "Conto MoneyBookers", "Conto Neteller", "Altro..."]
     var tipoContoSelected = "Conto Bancario"
@@ -26,14 +28,34 @@ class DetailViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(nome)
         title = "Dettaglio"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(ViewController.launchAlert))
         // Do any additional setup after loading the view.
-        nomeContoLabel.text = contoDetail.nome!
-        importoContoLabel.text = String(contoDetail.importo!)
-        nomeTipoContoLabel.text = contoDetail.tipoConto?.nome
-        movimentiLabel.text = String(contoDetail.listaMovimentoContoCorrente!.count)
+ 
+        if let conto = wallet as? ContoCorrente {
+            print(conto.nome)
+            nomeTipoContoLabel.text = conto.tipoConto?.nome
+            movimentiLabel.text = String(conto.listaMovimentoContoCorrente!.count)
+        } else {
+            print("non è un conto")
+        }
+        
+        if let carta = wallet as? CartaCredito {
+            nomeTipoContoLabel.text = carta.contoCorrente?.nome
+            movimentiLabel.text = String(carta.listaMovimentoCartaCredito!.count)
+        } else {
+            print("non è na carta")
+        }
+        
+        
+        nomeContoLabel.text = wallet.nome!
+        importoContoLabel.text = String(wallet.importo!)
+        
+        
+        
+        //nomeTipoContoLabel.text = .tipoConto?.nome
+       // movimentiLabel.text = String(contoDetail.listaMovimentoContoCorrente!.count)
         
     }
 
@@ -102,9 +124,18 @@ class DetailViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                 let importo:Int! = Int(textfield2.text!)
             
                 let causale = self.getCausaleByName(self.causaleSelected)
-                let contoCorrente = self.contoDetail
-            
-                MovimentoContoCorrente.createInManagedObjectContext(self.managedObjectContext, nome: nome, importo: importo, data: NSDate(), rendicontato: 0, casuale: causale, contoCorrente: contoCorrente!)
+                
+                if let conto = self.wallet as? ContoCorrente {
+                    MovimentoContoCorrente.createInManagedObjectContext(self.managedObjectContext, nome: nome, importo: importo, data: NSDate(), rendicontato: 0, casuale: causale, contoCorrente: conto)
+                } else {
+                    print("non è un conto")
+                }
+                
+                if let carta = self.wallet as? CartaCredito {
+                    MovimentoCartaCredito.createInManagedObjectContext(self.managedObjectContext, nome: nome, importo: importo, data: NSDate(), casuale: causale, cartacredito: carta)
+                } else {
+                    print("non è na carta")
+                }            
                 
                 //self.getContoCorrenteFromCoreData()
                 
@@ -174,20 +205,51 @@ class DetailViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     //MARKS: Override UITableViewDelegate
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contoDetail.listaMovimentoContoCorrente!.count
+        if let conto = wallet as? ContoCorrente {
+            return conto.listaMovimentoContoCorrente!.count
+
+        } else {
+            print("non è un conto")
+        }
+        
+        if let carta = wallet as? CartaCredito {
+            return carta.listaMovimentoCartaCredito!.count
+
+        } else {
+            print("non è na carta")
+        }
+        return 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DetailCell", forIndexPath: indexPath) as! CellDeatilViewCell
-        let list = contoDetail.listaMovimentoContoCorrente?.allObjects as! [MovimentoContoCorrente]
-        let movimentoContoCorrente = list[indexPath.item]
-        cell.nomeLabel.text = movimentoContoCorrente.nome
-        cell.importoLabel.text = String(movimentoContoCorrente.importo!)
-        cell.causaleLabel.text = movimentoContoCorrente.causale?.nome
+        if let conto = wallet as? ContoCorrente {
+            let list = conto.listaMovimentoContoCorrente?.allObjects as! [MovimentoContoCorrente]
+            let movimentoContoCorrente = list[indexPath.item]
+            cell.nomeLabel.text = movimentoContoCorrente.nome
+            cell.importoLabel.text = String(movimentoContoCorrente.importo!)
+            cell.causaleLabel.text = movimentoContoCorrente.causale?.nome
+            return cell
+            
+        } else {
+            print("non è un conto")
+        }
+
+        
+        if let carta = wallet as? CartaCredito {
+            let list = carta.listaMovimentoCartaCredito!.allObjects as! [MovimentoCartaCredito]
+            let movimentoContoCorrente = list[indexPath.item]
+            cell.nomeLabel.text = movimentoContoCorrente.nome
+            cell.importoLabel.text = String(movimentoContoCorrente.importo!)
+            cell.causaleLabel.text = movimentoContoCorrente.causale?.nome
+            return cell
+            
+        } else {
+            print("non è na carta")
+        }
+        //Non dovrebbe arrivaraci mai.
         return cell
-    }
  
-
-
+    }
 
 }

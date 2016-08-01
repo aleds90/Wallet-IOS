@@ -12,7 +12,7 @@
 import Foundation
 import CoreData
 
-extension ContoCorrente {
+extension ContoCorrente: Wallet  {
 
     @NSManaged var id: NSNumber?
     @NSManaged var nome: String?

@@ -12,12 +12,13 @@
 import Foundation
 import CoreData
 
-extension CartaCredito {
+extension CartaCredito: Wallet {
 
     @NSManaged var id: NSNumber?
     @NSManaged var nome: String?
     @NSManaged var importo: NSNumber?
     @NSManaged var listaMovimentoCartaCredito: NSSet?
     @NSManaged var contoCorrente: ContoCorrente?
+    
 
 }

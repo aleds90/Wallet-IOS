@@ -14,18 +14,34 @@ class HomeHolderViewController: UIViewController {
     var imageFileName: String!
     var pageIndex: Int!
     var nome: String!
-    var contoCorrente: ContoCorrente!
+    var wallet: Wallet!
+    
+    var contoCorrente: ContoCorrente?
     
     @IBOutlet weak var nomeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myImageView.image = UIImage(named: imageFileName)
+        //myImageView.image = UIImage(named: imageFileName)
         // Do any additional setup after loading the view.
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(HomeHolderViewController.imageTapped(_:)))
         myImageView.userInteractionEnabled = true
         myImageView.addGestureRecognizer(tapGestureRecognizer)
-        nomeLabel.text = nome
+        nomeLabel.textColor = UIColor(
+            red: 72.0/255.0,
+            green: 211.0/255.0,
+            blue: 178.0/255.0,
+            alpha: 1
+        )
+        myImageView.layer.borderWidth = 1
+        myImageView.layer.borderColor = UIColor(
+            red: 72.0/255.0,
+            green: 211.0/255.0,
+            blue: 178.0/255.0,
+            alpha: 1
+        ).CGColor
+        
+        nomeLabel.text = nome.capitalizedString
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,7 +63,7 @@ class HomeHolderViewController: UIViewController {
     {
         let nextView = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as? DetailViewController
         nextView?.nome = nome
-        nextView?.contoDetail = contoCorrente
+        nextView?.wallet = wallet
         self.navigationController?.pushViewController(nextView!, animated: true)
         
         

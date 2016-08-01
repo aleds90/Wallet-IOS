@@ -15,6 +15,7 @@
 		0E0CC6E61D2E94E3007B32CE /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0CC6E51D2E94E3007B32CE /* SettingsController.swift */; };
 		0E1D30B01D2BE30E00CB3125 /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D30AF1D2BE30E00CB3125 /* CellViewController.swift */; };
 		0E1D30B21D2BE9F200CB3125 /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1D30B11D2BE9F200CB3125 /* SCLAlertView.framework */; };
+		0E4AC7A31D460B6000A2140A /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4AC7A21D460B6000A2140A /* Wallet.swift */; };
 		0E8DF4F51D33EBA400EA533C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8DF4F41D33EBA400EA533C /* HomeViewController.swift */; };
 		0E8DF4F71D33EBE100EA533C /* HomeHolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8DF4F61D33EBE100EA533C /* HomeHolderViewController.swift */; };
 		0E91F3271D2D22A100AC114E /* FoldingTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E91F3261D2D22A100AC114E /* FoldingTabBar.framework */; };
@@ -70,6 +71,7 @@
 		0E0CC6E51D2E94E3007B32CE /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		0E1D30AF1D2BE30E00CB3125 /* CellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
 		0E1D30B11D2BE9F200CB3125 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../../Library/Developer/Xcode/DerivedData/Wallet-aodwwwvpcwebuwhkfgyyiswsfyrd/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework"; sourceTree = "<group>"; };
+		0E4AC7A21D460B6000A2140A /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		0E8DF4F41D33EBA400EA533C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0E8DF4F61D33EBE100EA533C /* HomeHolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHolderViewController.swift; sourceTree = "<group>"; };
 		0E91F3261D2D22A100AC114E /* FoldingTabBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FoldingTabBar.framework; path = "../../../Library/Developer/Xcode/DerivedData/Wallet-aodwwwvpcwebuwhkfgyyiswsfyrd/Build/Products/Debug-iphonesimulator/FoldingTabBar/FoldingTabBar.framework"; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				0EA479E01D2ABE50000C7153 /* MovimentoContoCorrente.swift */,
 				0EA479E11D2ABE50000C7153 /* Causale+CoreDataProperties.swift */,
 				0EA479E21D2ABE50000C7153 /* Causale.swift */,
+				0E4AC7A21D460B6000A2140A /* Wallet.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				0EA479E51D2ABE50000C7153 /* CartaCredito+CoreDataProperties.swift in Sources */,
 				0E1D30B01D2BE30E00CB3125 /* CellViewController.swift in Sources */,
 				0E0BB8D11D2FB489003AEA76 /* Statistics2Controller.swift in Sources */,
+				0E4AC7A31D460B6000A2140A /* Wallet.swift in Sources */,
 				0EA479ED1D2ABE50000C7153 /* Causale+CoreDataProperties.swift in Sources */,
 				0EA479E91D2ABE50000C7153 /* TipoConto+CoreDataProperties.swift in Sources */,
 				0E0BB8D31D2FD23A003AEA76 /* DetailViewController.swift in Sources */,
